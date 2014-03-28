@@ -1,0 +1,125 @@
+@charset 'utf-8';
+
+.button_buy-zzgold {
+    position: relative;
+
+    left: -4px;
+
+    width: 197px;
+    height: 59px;
+}
+
+.button_buy-zzgold__alt-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 197px;
+    height: 59px;
+
+    text-align: center;
+    line-height: 59px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button_buy-zzgold__normal,
+.button_buy-zzgold__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 197px;
+    height: 59px;
+
+    background-image: url(button_buy-zzgold__sprite.png);
+    background-repeat: no-repeat;
+
+    -webkit-transition: 0.1s opacity ease-in-out;
+       -moz-transition: 0.1s opacity ease-in-out;
+        -ms-transition: 0.1s opacity ease-in-out;
+         -o-transition: 0.1s opacity ease-in-out;
+            transition: 0.1s opacity ease-in-out;
+}
+
+.button_buy-zzgold__normal {
+    background-position: 0 0;
+}
+
+.button_buy-zzgold__hover {
+    opacity: 0;
+
+    background-position: 0 -114px;
+
+    z-index: 100;
+}
+
+.button_buy-zzgold__normal:hover .button_buy-zzgold__hover {
+    opacity: 1;
+}
+
+.button_buy-zzgold__hover:active {
+    background-position: 0 -57px;
+}
+
+.button_buy-zzgold__hover:active .button_buy-zzgold__shine {
+    display: none;
+}
+
+.button_buy-zzgold__shine {
+    position: absolute;
+    top: 0;
+    right: 4px;
+
+    width: 62px;
+    height: 59px;
+
+    /* background-image: url(button_buy-zzgold__shine.b64.png); */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/BJREFUeNqNWFtu2zAQ1NN2grhA+9nfHqc37SHa+xQt2sTxQxYlVVJmOauh7FTAgJRIkaPZB9fOh5cfmbtyoADqERu0uxHbueVYP6Ia8WXE1xGfR3wf8W3ErxHdiBbzhrllP7OW/fSqhNywJEmiRhYEyxmcu8W8HGvWsnYQUsVMFBf6uY3fIkhyJFxizgYkHuaWBAbM2eG+xNh2Au5bEApeCCOm5N5RkEQXBLnpRlTMnPk3TumnEccRF6zT2pog2oH0YO3/m5hmLaWtjFwkS1d4xH01jRvMR4GrCNGLqYelSCnBfs3/MGfrYYrRP2l6jH0YccKcM+ZlaFunanZLPSWYG+wFqkc/9L6Ifol2j+cV1NyD2KutgfUaJ8YQkZo6NTGJ8mtxXyu5qCJN+jg/o/99mgiC2MEHXkw3KdHOxtmmPliIcrXzoUKI7pxPPtkYyH50BG0f+heJdT5gopuxHVTB3pHJPUmL0kiOeLAgMX8E4b2Yi0oxyQf0r0YoUVC+quQE+o75GjavhdyD878S/T38L8ygYkFQRdNyz7DwQWMbyRC5kZPTYWtmTpI3P+QRaF0y7rB5gzntBBNiHn+7Sp96KqdYn54kDBRHoF4JnI0ci7tIkAjwy+3c8uPzND8yFxYrE+w5o5njlfdHa2leElyACm/lvdxbTBE3F2KDN2+aD3my6DN+CI9GOctre+cdYv2S0PLKGf4sGnxCv0GyWPmY2kjKe7mQG1YLFjWjMZeFMiGbryf09AMi0vksu1L3GlIf5MNCVbQoVAdOcxxJ3i5IOWb91PfJJVEukkkri8ETji37QwqOA4HvcZ87hWsvQcFrQSIlFoB2upfxbGXOdYI87/VoUxPHKL5xxHSxZb+1TWXzZu5zw849b2KfCPMzvhP8+awk50QtypVxEr+2jeCGdcyNqZoXJOMjcF4SptmFWK4BU2lk8WvoQ0Lu4k6DAUTP7gxtUawe0b5aH/MuNDsJCrKkWFDmVm0oOauS5QxvbB7mnFAHPhtBtOdURZpXMgbLLR+xsT7j5CC+dIFqmatETq4wuILcXxA8gNwJ7zY+ou09jQNVsFdTSyAE73ux+qCDH53jn0DsZQYVPEcTc73gVXzvd3GhxaWo2vjgMHWBgykDgn+g4Ms0xqDhxy6PUyp471cdJSaB3pGq0C+lMm4nlcz5QerniN8+OES1dlH2y3X/R1OarAe3+HmhHouCk/kpyD4DZwZQmtzpw1TwHsG0cOWi/FuD/tK6+u/VqdPg/mCmlGQe1KzJ+ZwSTA90TTV26tg/BtEXmQcZJAyI9g08OtcCwvb7fxOnh/2VYzS5qwmvcl6fHOFOfC2sBuKN6x/P+yllPxcn3AAAAABJRU5ErkJggg==);
+    background-position: 0 13px;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+}
+
+@-webkit-keyframes shine {
+    0%   { background-position: 0 13px;    opacity: 0; }
+    50%  {                                 opacity: 1; }
+    100% { background-position: 33px 13px; opacity: 0; }
+}
+
+@-moz-keyframes shine {
+    0%   { background-position: 0 13px;    opacity: 0; }
+    50%  {                                 opacity: 1; }
+    100% { background-position: 33px 13px; opacity: 0; }
+}
+
+@-ms-keyframes shine {
+    0%   { background-position: 0 13px;    opacity: 0; }
+    50%  {                                 opacity: 1; }
+    100% { background-position: 33px 13px; opacity: 0; }
+}
+
+@-o-keyframes shine {
+    0%   { background-position: 0 13px;    opacity: 0; }
+    50%  {                                 opacity: 1; }
+    100% { background-position: 33px 13px; opacity: 0; }
+}
+
+@keyframes shine {
+    0%   { background-position: 0 13px;    opacity: 0; }
+    50%  {                                 opacity: 1; }
+    100% { background-position: 33px 13px; opacity: 0; }
+}
+
+.button_buy-zzgold__hover:hover .button_buy-zzgold__shine {
+    background-position: 33px 13px;
+
+    -webkit-animation: shine 0.5s;
+       -moz-animation: shine 0.5s;
+        -ms-animation: shine 0.5s;
+         -o-animation: shine 0.5s;
+            animation: shine 0.5s;
+}

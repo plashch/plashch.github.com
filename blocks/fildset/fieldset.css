@@ -1,0 +1,132 @@
+.fieldset {
+    padding: 0;
+    margin: 0;
+    margin-top: 45px;
+
+    border: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fieldset__field {
+    display: table-row;
+
+    height: 40px;
+}
+
+.fieldset__field-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    color: #fff;
+
+    height: 50px;
+
+    text-align: right;
+    vertical-align: middle;
+
+    padding-right: 30px;
+}
+
+.fieldset__field-value {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.fieldset__field-input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    color: #000;
+
+    padding: 10px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.fieldset__field-success {
+    display: table-cell;
+    width: 36px;
+
+    /* background-image: url(fieldset__field-success.b64.png); */
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAYAAADNGCeJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi9Gt1ZKAABENxLBD/ZaHAID8gXgbEbED8A4iTyTXME4hXQw0CgUQg/syEpKATiMOJMMgViNciGQQD90AuYwTiPiAuAPkbitfgMMgeiDcAMSeaeDEQTwS5rB9qEAgwQ8MhCItBNkC8FYi50MTLoY5hABl2E4j/I0myAvFyIPZFErMA4i1AzI1mUC0Qd8E4IG9Ohxo6GeplBmh4gLwaAMSvgHgHEPOjGdQAxC3IArDYnAo1cCKageuA+DsWg0CGNKKHA3LSmAw1sB/JQA4oZkCL9VpsscOExge5rAhPsgAFdAUuSSYsYhNwGDgRmgQYSDGMAerVEiT+FCAuJJSa8WWnXqhlykCch5Z8sAKAAAMAGRcsPp/gpt4AAAAASUVORK5CYII=) center center no-repeat;
+    color: #39ab2e;
+    font-size: 13px;
+
+    position: relative;
+    left: -21px;
+}
+
+.fieldset__field-input--ok + .fieldset__field--ok {
+    display: block;
+}
+
+.fieldset__field--ok {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAYAAADNGCeJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi9Gt1ZKAABENxLBD/ZaHAID8gXgbEbED8A4iTyTXME4hXQw0CgUQg/syEpKATiMOJMMgViNciGQQD90AuYwTiPiAuAPkbitfgMMgeiDcAMSeaeDEQTwS5rB9qEAgwQ8MhCItBNkC8FYi50MTLoY5hABl2E4j/I0myAvFyIPZFErMA4i1AzI1mUC0Qd8E4IG9Ohxo6GeplBmh4gLwaAMSvgHgHEPOjGdQAxC3IArDYnAo1cCKageuA+DsWg0CGNKKHA3LSmAw1sB/JQA4oZkCL9VpsscOExge5rAhPsgAFdAUuSSYsYhNwGDgRmgQYSDGMAerVEiT+FCAuJJSa8WWnXqhlykCch5Z8sAKAAAMAGRcsPp/gpt4AAAAASUVORK5CYII=) center center no-repeat;
+
+    width: 19px;
+    height: 16px;
+
+    position: absolute;
+    top: 18px;
+    right: 25px;
+
+    display: none;
+}
+
+.fieldset__field-subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    color: #cf0000;
+
+    width: 280px;
+    vertical-align: top;
+}
+
+.fieldset__field-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: italic;
+
+    color: #646772;
+
+    vertical-align: top;
+
+    width: 250px;
+}
+
+.fieldset__field-send {
+    vertical-align: top;
+}
+
+.fieldset__field-send span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    color: #646772;
+
+    border-bottom: 1px dotted;
+
+    cursor: pointer;
+}
+
+.fieldset__changePhone__info {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    line-height: 18px;
+
+    color: #f6e2a5;
+
+    width: 390px;
+    padding-left: 50px;
+
+    background: url(../form__notice/form__notice-warning.b64.png) 0 0 no-repeat;
+
+    margin-left: auto;
+    margin-right: auto;
+}

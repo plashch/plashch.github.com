@@ -1,0 +1,86 @@
+.auth__form {
+	width: 300px;
+
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.auth__form .form__button {
+	width: 100%;
+}
+
+.auth__remember {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #93959d;
+
+	position: relative;
+	top: 10px;
+}
+
+.auth__remember input {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.auth__field {
+	position: relative;
+
+	display: block;
+
+	height: 40px;
+
+	margin-bottom: 17px;
+}
+
+.auth__field-name {
+	color: #fefefe;
+
+	text-align: right;
+
+	position: absolute;
+	top: 10px;
+	left: -320px;
+
+	width: 300px;
+
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+.auth__field-value {
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+
+	padding: 8px;
+
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+
+	box-sizing: border-box;
+}
+
+.auth__remind-link {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+
+	display: block;
+
+	color: #ffc717;
+
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.auth__value {
+	color: #fff;
+
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+	line-height: 40px;
+}

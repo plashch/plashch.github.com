@@ -1,0 +1,27 @@
+@-moz-document url-prefix() {
+    .auth__field-value {
+        width: 280px;
+    }
+}
+
+.input-incorrect {
+    border:#f00 1px solid; // Цвет фона
+    box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+    -webkit-box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+    -moz-box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+}
+
+.form__button__loading {
+    display: block !important;
+}
+
+.field__message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #646772;
+    overflow: visible;
+}
+
+.field__message a {
+    color: #ffc717;
+}

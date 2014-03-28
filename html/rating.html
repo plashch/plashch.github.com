@@ -10,8 +10,6 @@
 	<link href="/css/zzima-header.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/patch.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/main.css" media="screen" rel="stylesheet" type="text/css" >
-	<link href="/css/jquery.powertip.css" media="screen" rel="stylesheet" type="text/css" >
-	<link href="/css/casino.css" media="screen" rel="stylesheet" type="text/css" >
 
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
@@ -22,7 +20,6 @@
 	<script type="text/javascript" src="/blocks/popup/popup.js"></script>
 	<script type="text/javascript" src="/blocks/settings/settings.js"></script>
 	<script type="text/javascript" src="/js/pages/account.js"></script>
-	<script type="text/javascript" src="/js/jquery.powertip.min.js"></script>
 	<script type="text/javascript" src="/js/main.js"></script>
 
 </head>
@@ -57,296 +54,137 @@
 
 <div class="background body-z-head">
 <div class="form-container">
-	<div class="form casino-page">
-		<div class="container">
-			<div class="casino-hat">
-				<div class="casino-hat__left">
-					<h1 class="east" title="North placement">Весення халява!</h1>
-					<p>
-						Сражайся за сотни тысяч призов! Рулетка позволит увеличить доход на наших проектах за счет увеличения количества платящих игроков, увеличения частоты платежей.  <a href="#">Правила</a>
-					</p>
-				</div>
-				<div class="casino-hat__right">
-					<div class="couter-block east" title="huihuihui">
-						<label>Jackpot:</label>
-							<ul id="count" class="count">
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-							</ul>
-					</div>
+
+	<div class="form">
+		<div class="form__nav">
+			<ul id="mainNav" >
+				<li><a href="account.html"><i class="i-profile"></i>Профиль</a></li>
+				<li><a class="active" href="javascript:;"><i class="i-rating"></i>Рейтинг<sup>225</sup></a></li>
+				<li><a href="progress.html"><i class="i-progress"></i>Достижения</a></li>
+				<li><a href="shop.html"><i class="i-shop"></i>Магазин<sup>1250</sup></a></li>
+				<li><a href="inventory.html"><i class="i-inventory"></i>Инвентарь<sup>15</sup></a></li>
+			</ul>
+		</div>
+		<div class="form__content">
+			<div class="form__item form__overall-rating">
+				<div class="form__title">Рейтинг Игроков ZZima<span class="title-date"><i class="i-clock"></i>с  25 июля по 3 августа</span></div>
+				<div class="row">
+					<table>
+						<thead>
+							<tr>
+								<th class="txt-left">Место</th>
+								<th class="txt-left">Игрок</th>
+								<th class="txt-right">AP</th>
+								<th class="txt-center"><i class="i-star"></i></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="mark player-line">
+								<td class="txt-center">1</td>
+								<td class="player-name"><img height="40" src="/images/user-pic.png">kristyfer_robinson  </td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">2</td>
+								<td class="player-name"><img height="40" src="/images/user-pic2.png">vzh1k</td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center" ><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">3</td>
+								<td class="player-name"><img height="40" src="/images/user-pic3.png">Abama</td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">4</td>
+								<td class="player-name"><img height="40" src="/images/user-pic4.png">ai4</td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">5</td>
+								<td class="player-name"><img height="40" src="/images/user-pic2.png">Kristy_Poly</td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">6</td>
+								<td class="player-name"><img height="40" src="/images/user-pic.png">stoma</td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">7</td>
+								<td class="player-name"><img height="40" src="/images/user-pic4.png">PlusPlus</td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">8</td>
+								<td class="player-name"><img height="40" src="/images/user-pic3.png">bl@ck </td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">9</td>
+								<td class="player-name"><img height="40" src="/images/user-pic2.png">izgoy</td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="player-line">
+								<td class="txt-center">10</td>
+								<td class="player-name"><img height="40" src="/images/user-pic4.png">Kon' </td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="empty">
+								<td class="txt-center"></td>
+								<td colspan="3">...</td>
+							</tr>
+							<tr class="player-line player-line__personal">
+								<td class="txt-center">225</td>
+								<td class="player-name"><img height="40" src="/images/user-pic.png">MegaAyayayGrandma </td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+							<tr class="empty">
+								<td class="txt-center"></td>
+								<td colspan="3">...</td>
+							</tr><tr class="player-line">
+								<td class="txt-center">365</td>
+								<td class="player-name"><img height="40" src="/images/user-pic2.png">Lolita </td>
+								<td class="txt-right">11 560</td>
+								<td class="txt-center"><i class="i-star__big"></i></td>
+							</tr>
+
+						</tbody>
+					</table>
 				</div>
 			</div>
-			<div class="casino-body">
-				<div class="list-lately">
-					<label>Недавно выиграли:</label>
-					<ul>
-						<li class="actual">
-							<span class="icon">
-								<i class="icon-0_w24"> </i>
-							</span>
-							<h5>Доспехи бога</h5>
-							<span class="date">12/01/2014 18:47</span>
-							<span class="sign">@baddebadde</span>
-						</li>
-						<li>
-							<span class="icon">
-								<i class="icon-1_w24"></i>
-							</span>
-							<h5>20% бонус пополнения ZZGold  copy</h5>
-							<span class="date">12/01/2014 18:45</span>
-							<span class="sign">@steemeee</span>
-						</li>
-					</ul>
+			<div class="form__item form__search">
+				<div class="form__title">Поиск игроков</div>
+				<div class="row">
+					<input placeholder="Введите ник игрока" type="text"> <a class="i-search" href="#"></a>
+					<p class="t-italic">Ты можешь найти через поиск своих друзей и добавить их в избранное, чтобы отсдеживать их место в общем рейтинге</p>
 				</div>
-				<div class="control-block jackpot"> <!-- first / win / jackpot -->
-						<div class="state state_first">
-							<div class="state-main">
-							<h2></h2>
-							<p>Испытай свою удачу!  Крути и выигрывай супер-призы!</p>
-							<i></i>
+			</div>
+			<div class="form__my-rating">
+					<div class="row">
+						<div class="my-rating__head">
+							Вы в рейтинге на
+								<h3>225</h3>
+							месте
 						</div>
-						<a class="start-button" href="javascript:;">Крутануть</a>
-						<div class="sub">Бесплатные попытки: <span>3<span></div>
+						<div>
+							<h4>10 560 <i></i></h4>
+							<p>Требовалось для попадания в топ 100 на этой неделе</p>
+						</div>
+						<p class="t-italic">Рейтинг пересчитывается еженедельно в ночь с пятницы на субботу и несет в себе данные за предыдущую неделю.</p>
+						<p class="t-italic">Каждый кто попадает в рейтинг получает достижение «Я попал в рейтинг» и 200 ачивмент поинтов (AP) </p>
+
 					</div>
-					<div class="state state_win">
-						<div class="state-main">
-							<h2></h2>
-							<div class="info">
-								<h4>500 ZZGold</h4>
-								<p>
-									Ты можешь купить много полезного для своего персонажа или потратить их на сервисы
-								</p>
-								<div class="win-his">
-									<label>История выигрышей:</label>
-									<a href="javascript:;"><i class="icon-0_w22"></i></a>
-									<a href="javascript:;"><i class="icon-1_w22"></i></a>
-									<a href="javascript:;">
-										<i class="icon-2_w22"></i>
-										<span class="txt-popup">
-												<h4>Золотые монеты</h4>
-												<span>Стоимость: 140 ZZGold</span>
-												<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-										</span>
-									</a>
-									<a href="javascript:;"><i class="icon-3_w22"></i></a>
-								</div>
-							</div>
-						</div>	
-						<a class="start-button" href="javascript:;">Крутануть</a>
-						<div class="sub">У вас недостаточно средств, пополните баланс</div>
-					</div>
-					<div class="state state_jackpot">
-						<div class="state-main">
-							<h2>
-								<span class="star star_1"></span>
-								<span class="star star_2"></span>
-								<span class="star star_3"></span>
-								<span class="star star_4"></span>
-								<span class="star star_5"></span>
-							</h2>
-							<div class="info">
-								<p>
-									Ты самый везучий человек на планете Земля!
-								</p>
-								<div class="win-his">
-									<label>История выигрышей:</label>
-									<a href="javascript:;"><i class="icon-0_w22"></i></a>
-									<a href="javascript:;"><i class="icon-1_w22"></i></a>
-									<a href="javascript:;" class="show-tip tip" 
-									title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22"></i></a>
-									<a href="javascript:;"><i class="icon-3_w22"></i></a>
-								</div>
-							</div>
-						</div>	
-						<a class="start-button" href="javascript:;">
-								<span class="txt">Крутануть</span>
-								<span class="light"></span>
-								<span class="light light_two active"></span>
-						</a>
-						<div class="sub">Бесплатные попытки: <span>3<span></div>
-					</div>
-				</div>
-				<div class="roll-wrapper">
-					<div class="sound-control toggle-active tip-roll show-tip tip" title="<p>Выключить саунд</p>">
-						<i></i>
-					</div>
-					<i class="luminous luminous_top"></i>
-					<i class="luminous luminous_bottom"></i>
-						<ul class="roll-container">
-							<li>
-									<div class="content content-t0 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i>500</div>
-									<div class="triangle triangle_0 show-tip"></div>
-									<div class="triangle triangle_0 color"></div>
-							</li>
-							<li>
-								<div class="content content-t1 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_1 show-tip"></div>
-								<div class="triangle triangle_1 color"></div>
-							</li>
-							<li>
-								<div class="content content-t2 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22 glow"></i></div>
-								<div class="triangle triangle_2 show-tip"></div>
-								<div class="triangle triangle_2 color"></div>
-							</li>
-							<li>
-								<div class="content content-t3 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-3_w22"></i>4</div>
-								<div class="triangle triangle_3 show-tip"></div>
-								<div class="triangle triangle_3 color"></div>
-							</li>
-							<li>
-								<div class="content content-t4 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-4_w22"></i></div>
-								<div class="triangle triangle_4 show-tip"></div>
-								<div class="triangle triangle_4 color"></div>
-							</li>
-							<li>
-								<div class="content content-t5 tip jackpot" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"></div>
-								<div class="triangle triangle_5 show-tip"></div>
-								<div class="triangle triangle_5 color"></div>
-							</li>
-							<li>
-								<div class="content content-t6 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-6_w22"></i>x3</div>
-								<div class="triangle triangle_6 show-tip"></div>
-								<div class="triangle triangle_6 color"></div>
-							</li>
-							<li>
-								<div class="content content-t7 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i>70</div>
-								<div class="triangle triangle_7 show-tip"></div>
-								<div class="triangle triangle_7 color"></div>
-							</li>
-							<li>
-								<div class="content content-t8 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_8 show-tip"></div>
-								<div class="triangle triangle_8 color"></div>
-							</li>
-							<li>
-								<div class="content content-t9 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22 glow"></i></div>
-								<div class="triangle triangle_9 show-tip"></div>
-								<div class="triangle triangle_9 color"></div>
-							</li>
-							<li>
-								<div class="content content-t10 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-3_w22"></i>20</div>
-								<div class="triangle triangle_10 show-tip"></div>
-								<div class="triangle triangle_10 color"></div>
-							</li>
-							<li>
-								<div class="content content-t11 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-4_w22"></i></div>
-								<div class="triangle triangle_11 show-tip"></div>
-								<div class="triangle triangle_11 color"></div>
-							</li>
-							<li>
-								<div class="content content-t12 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-5_w22"></i>1500</div>
-								<div class="triangle triangle_12 show-tip"></div>
-								<div class="triangle triangle_12 color"></div>
-							</li>
-							<li>
-								<div class="content content-t13 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-6_w22 glow"></i>300</div>
-								<div class="triangle triangle_13 show-tip"></div>
-								<div class="triangle triangle_13 color"></div>
-							</li>
-							<li>
-								<div class="content content-t14 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i></div>
-								<div class="triangle triangle_14 show-tip"></div>
-								<div class="triangle triangle_14 color"></div>
-							</li>
-							<li>
-								<div class="content content-t15 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_15 show-tip"></div>
-								<div class="triangle triangle_15 color"></div>
-							</li>
-							<li class="shadow-round"></li>
-						</ul>
-						<div class="roll-arrow"><i class="luminous"></i></div>
-				</div>
 			</div>
 		</div>
 	</div>

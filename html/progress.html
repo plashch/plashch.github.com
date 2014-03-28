@@ -10,8 +10,6 @@
 	<link href="/css/zzima-header.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/patch.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/main.css" media="screen" rel="stylesheet" type="text/css" >
-	<link href="/css/jquery.powertip.css" media="screen" rel="stylesheet" type="text/css" >
-	<link href="/css/casino.css" media="screen" rel="stylesheet" type="text/css" >
 
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
@@ -22,7 +20,6 @@
 	<script type="text/javascript" src="/blocks/popup/popup.js"></script>
 	<script type="text/javascript" src="/blocks/settings/settings.js"></script>
 	<script type="text/javascript" src="/js/pages/account.js"></script>
-	<script type="text/javascript" src="/js/jquery.powertip.min.js"></script>
 	<script type="text/javascript" src="/js/main.js"></script>
 
 </head>
@@ -57,297 +54,327 @@
 
 <div class="background body-z-head">
 <div class="form-container">
-	<div class="form casino-page">
-		<div class="container">
-			<div class="casino-hat">
-				<div class="casino-hat__left">
-					<h1 class="east" title="North placement">Весення халява!</h1>
-					<p>
-						Сражайся за сотни тысяч призов! Рулетка позволит увеличить доход на наших проектах за счет увеличения количества платящих игроков, увеличения частоты платежей.  <a href="#">Правила</a>
-					</p>
-				</div>
-				<div class="casino-hat__right">
-					<div class="couter-block east" title="huihuihui">
-						<label>Jackpot:</label>
-							<ul id="count" class="count">
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-							</ul>
-					</div>
-				</div>
-			</div>
-			<div class="casino-body">
-				<div class="list-lately">
-					<label>Недавно выиграли:</label>
-					<ul>
-						<li class="actual">
-							<span class="icon">
-								<i class="icon-0_w24"> </i>
-							</span>
-							<h5>Доспехи бога</h5>
-							<span class="date">12/01/2014 18:47</span>
-							<span class="sign">@baddebadde</span>
-						</li>
-						<li>
-							<span class="icon">
-								<i class="icon-1_w24"></i>
-							</span>
-							<h5>20% бонус пополнения ZZGold  copy</h5>
-							<span class="date">12/01/2014 18:45</span>
-							<span class="sign">@steemeee</span>
-						</li>
-					</ul>
-				</div>
-				<div class="control-block jackpot"> <!-- first / win / jackpot -->
-						<div class="state state_first">
-							<div class="state-main">
-							<h2></h2>
-							<p>Испытай свою удачу!  Крути и выигрывай супер-призы!</p>
-							<i></i>
+
+	<div class="form">
+		<div class="form__nav">
+			<ul id="mainNav" >
+				<li><a href="account.html"><i class="i-profile"></i>Профиль</a></li>
+				<li><a href="rating.html" ><i class="i-rating"></i>Рейтинг<sup>225</sup></a></li>
+				<li><a class="active" href="javascript:;"><i class="i-progress"></i>Достижения</a></li>
+				<li><a href="shop.html"><i class="i-shop"></i>Магазин<sup>1250</sup></a></li>
+				<li><a href="inventory.html"><i class="i-inventory"></i>Инвентарь<sup>15</sup></a></li>
+			</ul>
+		</div>
+		<div class="form__content">
+			<div class="form__progress__head">
+				<div class="form__item form__progress">
+					<div class="form__title">Твои Достижения <span class="title-date"><i class="i-clock"></i>Сегодня 26 июля</span></div>
+					<div class="row">
+						<div class="progress-bar">
+							<div style="width: 80%" class="progress-line">
+								<span class="progress-point">
+									<span>10 560</span>
+									<p>Всего заработано 100500</p>
+								</span>
+								<i></i>
+
+							</div>
+							<div class="point" style="left: 10%">
+								3 000 AP
+								<span class="status silver_s"></span>
+							</div>
+							<div class="point" style="left: 40%">
+								30 000 AP
+								<span class="status gold_s"></span>
+							</div>
 						</div>
-						<a class="start-button" href="javascript:;">Крутануть</a>
-						<div class="sub">Бесплатные попытки: <span>3<span></div>
+						<p class="progress-bar__description">Получить поинты вы можете: пополняя баланс (1 ZZ = 1 AP), выполняя ежедневные задания и достижения, а так же учавствуя в конкурсах и поддерживая комьюнити.</p>
 					</div>
-					<div class="state state_win">
-						<div class="state-main">
-							<h2></h2>
-							<div class="info">
-								<h4>500 ZZGold</h4>
-								<p>
-									Ты можешь купить много полезного для своего персонажа или потратить их на сервисы
-								</p>
-								<div class="win-his">
-									<label>История выигрышей:</label>
-									<a href="javascript:;"><i class="icon-0_w22"></i></a>
-									<a href="javascript:;"><i class="icon-1_w22"></i></a>
-									<a href="javascript:;">
-										<i class="icon-2_w22"></i>
-										<span class="txt-popup">
-												<h4>Золотые монеты</h4>
-												<span>Стоимость: 140 ZZGold</span>
-												<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-										</span>
-									</a>
-									<a href="javascript:;"><i class="icon-3_w22"></i></a>
-								</div>
-							</div>
-						</div>	
-						<a class="start-button" href="javascript:;">Крутануть</a>
-						<div class="sub">У вас недостаточно средств, пополните баланс</div>
-					</div>
-					<div class="state state_jackpot">
-						<div class="state-main">
-							<h2>
-								<span class="star star_1"></span>
-								<span class="star star_2"></span>
-								<span class="star star_3"></span>
-								<span class="star star_4"></span>
-								<span class="star star_5"></span>
-							</h2>
-							<div class="info">
-								<p>
-									Ты самый везучий человек на планете Земля!
-								</p>
-								<div class="win-his">
-									<label>История выигрышей:</label>
-									<a href="javascript:;"><i class="icon-0_w22"></i></a>
-									<a href="javascript:;"><i class="icon-1_w22"></i></a>
-									<a href="javascript:;" class="show-tip tip" 
-									title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
+					<script>
+						var $progressLine = $('.progress-line');
+						var $progressPoint = $('.progress-point');
 
-									"><i class="icon-2_w22"></i></a>
-									<a href="javascript:;"><i class="icon-3_w22"></i></a>
-								</div>
-							</div>
-						</div>	
-						<a class="start-button" href="javascript:;">
-								<span class="txt">Крутануть</span>
-								<span class="light"></span>
-								<span class="light light_two active"></span>
-						</a>
-						<div class="sub">Бесплатные попытки: <span>3<span></div>
-					</div>
+						if($progressLine.width() > 382){
+							$progressPoint.addClass('right-limit');
+						}else{
+							$progressPoint.removeClass('right-limit');
+						}
+					</script>
 				</div>
-				<div class="roll-wrapper">
-					<div class="sound-control toggle-active tip-roll show-tip tip" title="<p>Выключить саунд</p>">
-						<i></i>
-					</div>
-					<i class="luminous luminous_top"></i>
-					<i class="luminous luminous_bottom"></i>
-						<ul class="roll-container">
-							<li>
-									<div class="content content-t0 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
+				<div class="form__progress-r">
+						<div class="row">
+							<div class="u-progress-block gold_l"> <!-- class="u-progress-block silver_l" -->
+								<div class="progress-r__head">
+									Твой статус
+									<span class="status"></span>
+									<p>Нужно набрать в этом месяце для продления Silver аккаунта</p>
 
-									"><i class="icon-0_w22"></i>500</div>
-									<div class="triangle triangle_0 show-tip"></div>
-									<div class="triangle triangle_0 color"></div>
-							</li>
-							<li>
-								<div class="content content-t1 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
+									<ul class="progress-list">
+										<li><i></i>Можешь убивать всех всех</li>
+										<li><i></i>3D кровища</li>
+										<li><i></i>Бесплатный кофе</li>
+									</ul>
 
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_1 show-tip"></div>
-								<div class="triangle triangle_1 color"></div>
-							</li>
-							<li>
-								<div class="content content-t2 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22 glow"></i></div>
-								<div class="triangle triangle_2 show-tip"></div>
-								<div class="triangle triangle_2 color"></div>
-							</li>
-							<li>
-								<div class="content content-t3 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-3_w22"></i>4</div>
-								<div class="triangle triangle_3 show-tip"></div>
-								<div class="triangle triangle_3 color"></div>
-							</li>
-							<li>
-								<div class="content content-t4 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-4_w22"></i></div>
-								<div class="triangle triangle_4 show-tip"></div>
-								<div class="triangle triangle_4 color"></div>
-							</li>
-							<li>
-								<div class="content content-t5 tip jackpot" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"></div>
-								<div class="triangle triangle_5 show-tip"></div>
-								<div class="triangle triangle_5 color"></div>
-							</li>
-							<li>
-								<div class="content content-t6 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-6_w22"></i>x3</div>
-								<div class="triangle triangle_6 show-tip"></div>
-								<div class="triangle triangle_6 color"></div>
-							</li>
-							<li>
-								<div class="content content-t7 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i>70</div>
-								<div class="triangle triangle_7 show-tip"></div>
-								<div class="triangle triangle_7 color"></div>
-							</li>
-							<li>
-								<div class="content content-t8 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_8 show-tip"></div>
-								<div class="triangle triangle_8 color"></div>
-							</li>
-							<li>
-								<div class="content content-t9 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22 glow"></i></div>
-								<div class="triangle triangle_9 show-tip"></div>
-								<div class="triangle triangle_9 color"></div>
-							</li>
-							<li>
-								<div class="content content-t10 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-3_w22"></i>20</div>
-								<div class="triangle triangle_10 show-tip"></div>
-								<div class="triangle triangle_10 color"></div>
-							</li>
-							<li>
-								<div class="content content-t11 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-4_w22"></i></div>
-								<div class="triangle triangle_11 show-tip"></div>
-								<div class="triangle triangle_11 color"></div>
-							</li>
-							<li>
-								<div class="content content-t12 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-5_w22"></i>1500</div>
-								<div class="triangle triangle_12 show-tip"></div>
-								<div class="triangle triangle_12 color"></div>
-							</li>
-							<li>
-								<div class="content content-t13 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-6_w22 glow"></i>300</div>
-								<div class="triangle triangle_13 show-tip"></div>
-								<div class="triangle triangle_13 color"></div>
-							</li>
-							<li>
-								<div class="content content-t14 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i></div>
-								<div class="triangle triangle_14 show-tip"></div>
-								<div class="triangle triangle_14 color"></div>
-							</li>
-							<li>
-								<div class="content content-t15 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_15 show-tip"></div>
-								<div class="triangle triangle_15 color"></div>
-							</li>
-							<li class="shadow-round"></li>
-						</ul>
-						<div class="roll-arrow"><i class="luminous"></i></div>
+								</div>
+							</div>
+							<div class="u-progress_footer">
+								<i></i>
+								<h3>235</h3>
+								<p>
+									Нужно набрать в этом месяце для продления Silver аккаунта
+								</p>
+							</div>
+						</div>
 				</div>
 			</div>
+		</div>
+		<div class="form__content form__progress__bottom">
+		<div class="row">
+			<div class="progress__tabs">
+				<ul class="tabNavigation">
+					<li><a href="#tasks"><span>Задания</span></a></li>
+					<li><a href="#progress"><span>Достижения</span><span class="sup">20/42</span></a></li>
+				</ul>
+
+				<div id="tasks" class="tab">
+					<p class="tab_description">Вы можете получать AP ежедневно выплняя задания</p>
+
+					<div class="form__title form__title__sub">Zzima</div>
+					<div class="table full_width">
+						<div class="field">
+							<div class="col col1">
+								<div class="badges complete item_tooltip">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+											<h4>Сообщение на форуме</h4>
+											<span>2 АP</span>
+									</div>
+									<div class="tooltip" style="display: none;">
+										Зарегистрироваться в Каяке, помочь новичку
+									</div>
+								</div>
+							</div>
+							<div class="col col2">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/progress.png"></div>
+									<div class="name_block">
+										<h4>Достичь 50 уровня в Forsaken World</h4>
+										<span>30 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col3">
+								<div class="badges item_tooltip">
+									<div class="icon_block"><img src="/images/icons/man.png"></div>
+									<div class="name_block">
+										<h4>Здесь тултип с подарком</h4>
+										<span>2 АP</span>
+									</div>
+									<div class="tooltip" style="display: none;">
+										<div class="tooltip-item">
+											<h6>Задание:</h6>
+											<p>Зарегистрироваться в Каяке, помочь новичку</p>
+										</div>
+										<div class="tooltip-item tooltip-item__gift">
+											<h6>Подарок:</h6>
+											<p>Новая бейсболка, кепка и Бомбимбом Шоколадный</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="col col1">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/man.png"></div>
+									<div class="name_block">
+										<h4>Скачать игру</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col2">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/vk.png"></div>
+									<div class="name_block">
+										<h4>Привязать vk-аккаунт</h4>
+										<span>10 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col3">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Наиграть 500 часов</h4>
+										<span>10 АP</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="col col1">
+								<div class="badges item_tooltip complete ">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Сообщение на форуме</h4>
+										<span>2 АP</span>
+									</div>
+									<div class="tooltip" style="display: none;">
+										Зарегистрироваться в Каяке, помочь новичку
+									</div>
+								</div>
+							</div>
+							<div class="col col2">
+								<div class="badges complete ">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Достичь 50 уровня в Forsaken World</h4>
+										<span>30 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col3">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Помочь другу</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__title form__title__sub">Игры</div>
+					<div class="table full_width">
+						<div class="field">
+							<div class="col col1">
+								<div class="badges complete">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Сообщение на форуме</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col2">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/clock.png"></div>
+									<div class="name_block">
+										<h4>Достичь 50 уровня в Forsaken World</h4>
+										<span>30 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col3">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/man.png"></div>
+									<div class="name_block">
+										<h4>Помочь другу</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="col col1">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/vk.png"></div>
+									<div class="name_block">
+										<h4>Сообщение на форуме</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col2">
+								<div class="badges complete">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Достичь 50 уровня в Forsaken World</h4>
+										<span>30 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col3">
+								<div class="badges complete">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Помочь другу</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="progress" class="tab">
+					<p class="tab_description">Вы можете получать AP ежедневно выплняя задания</p>
+
+					<div class="form__title form__title__sub">Игры</div>
+					<div class="table full_width">
+						<div class="field">
+							<div class="col col1">
+								<div class="badges complete">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Сообщение на форуме</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col2">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/clock.png"></div>
+									<div class="name_block">
+										<h4>Достичь 50 уровня в Forsaken World</h4>
+										<span>30 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col3">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/man.png"></div>
+									<div class="name_block">
+										<h4>Помочь другу</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="field">
+							<div class="col col1">
+								<div class="badges">
+									<div class="icon_block"><img src="/images/icons/vk.png"></div>
+									<div class="name_block">
+										<h4>Сообщение на форуме</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col2">
+								<div class="badges complete">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Достичь 50 уровня в Forsaken World</h4>
+										<span>30 АP</span>
+									</div>
+								</div>
+							</div>
+							<div class="col col3">
+								<div class="badges complete">
+									<div class="icon_block"><img src="/images/icons/mail.png"></div>
+									<div class="name_block">
+										<h4>Помочь другу</h4>
+										<span>2 АP</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 

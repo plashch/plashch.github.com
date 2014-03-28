@@ -1,0 +1,79 @@
+@charset 'utf-8';
+
+.form__field {
+    width: 100%;
+}
+
+.form__field__label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    color: #fff;
+
+    text-align: right;
+
+    padding-right: 20px;
+}
+
+.form__field__input {
+    width: 280px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form__field__input input {
+    width: 100%;
+
+    font-size: 20px;
+    padding: 5px;
+}
+
+.form__field__current-email {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.popup-addPhone .form__field__input {
+    width: 260px;
+}
+
+.form__field__input-subtext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: italic;
+
+    color: #646772;
+}
+
+.form__field-label {
+    text-align: right;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    color: #646772;
+}
+
+.form__field-value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    color: #fff;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 260px;
+}
+
+.form__field-password {
+    font-family: 'Times New Roman', Times, 'Nimbus Roman No9 L', 'Liberation Serif', serif;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 16px;
+    letter-spacing: -5px;
+    text-indent: -5px;
+}

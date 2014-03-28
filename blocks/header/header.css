@@ -1,0 +1,248 @@
+.header {
+    position: relative;
+
+    width: 955px;
+    height: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+}
+
+.header__logo {
+    display: block;
+
+    width: 180px;
+    height: 50px;
+
+    text-align: center;
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.79);
+
+    float: left;
+}
+
+.header__logo__img {
+    margin-top: 9px;
+    border: none;
+}
+
+.header__button {
+    display: block;
+
+    height: 50px;
+
+    margin-left: 1px;
+
+    text-align: center;
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.79);
+
+    font-family: 'helioscbold', sans-serif;
+    font-size: 10px;
+    /*font-weight: bold;*/
+    line-height: 45px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    float: left;
+}
+
+.header__button__pay { width: 130px; }
+.header__button__support { width: 95px; }
+
+.header__button-blue {
+    display: block;
+
+    height: 50px;
+
+    text-align: center;
+
+    background-color: rgb(19, 27, 38);
+    background-color: rgba(19, 27, 38, 0.79);
+
+    font-family: 'helioscregular', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 45px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    float: left;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.header__button-blue__count {
+    width: 100px;
+    color: #dfdfdf;
+}
+
+.header__count__zzgold {
+    font-family: 'helioscbold', sans-serif;
+    font-size: 13px;
+}
+
+.header__count__zzgold-label {
+    font-family: 'helioscregular', sans-serif;
+    font-size: 12px;
+}
+
+.header__button-blue__exit {
+    font-size: 13px;
+    width: 65px;
+    color: #9298a0;
+}
+
+.header__button-blue__exit:hover {
+    color: #ffc717;
+}
+
+.header__button-blue__player {
+    font-family: 'helioscregular', sans-serif;
+    font-size: 13px;
+
+    width: 140px;
+    height: 49px;
+    text-align: center;
+
+    margin-left: 1px;
+
+    color: #ffc717;
+
+    border-bottom: 1px solid transparent;
+}
+
+.header__menu {
+    height: 50px;
+
+    margin-left: 1px;
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.79);
+
+    text-decoration: none;
+
+    float: left;
+}
+
+.header__logged .header__menu { width: 241px; }
+.header__unlogged .header__menu { width: 353px; }
+
+.header__unlogged .header__menu__listitem { width: 288px; }
+
+.header__menu__label{
+    font-family: 'helioscbold', sans-serif;
+    font-size: 10px;
+    /*font-weight: bold;*/
+    line-height: 50px;
+    text-decoration: none;
+
+    color: #dfdfdf;
+
+    margin-left: 22px;
+}
+
+.header__menu__label::after {
+    content: '';
+    position: relative;
+    top: 9px;
+    left: 10px;
+
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 4px 3.5px 0 3.5px;
+    border-color: #8c9396 transparent transparent transparent;
+}
+
+.header__menu__list {
+    display: none;
+
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    z-index: 10;
+    
+    border-bottom: 1px solid #373b42;
+}
+
+.header__menu:hover .header__menu__list {
+    display: block;
+}
+
+.header__menu__listitem {
+    display: block;
+
+    width: 174px;
+    height: 30px;
+    line-height: 30px;
+
+    padding-left: 65px;
+
+    font-family: 'helioscregular', sans-serif;
+    font-size: 13px;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    background-color: #161b23;
+    
+    border-left: 1px solid #373b42;
+    border-right: 1px solid #373b42;
+}
+
+.header__menu__listitem:hover {
+    background-color: #d3ab24;
+
+    color: #161b23;
+}
+
+.header__button-blue__player:hover .header__button__underline,
+.header__button-blue__exit:hover .header__button__underline {
+    border-bottom: 1px solid;
+}
+
+.header__button-unlogged {
+    display: block;
+
+    height: 50px;
+
+    margin-left: 1px;
+
+    text-align: center;
+
+    background-color: rgb(19, 27, 38);
+    background-color: rgba(19, 27, 38, 0.79);
+
+    font-family: 'helioscbold', sans-serif;
+    font-size: 10px;
+    /*font-weight: bold*/;
+    line-height: 45px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    float: left;
+}
+
+.header__button-unlogged:hover {
+    background-color: #d3aa23;
+    color: #000;
+}
+
+.header__button-unlogged__login { width: 66px; }
+.header__button-unlogged__create { width: 126px; }

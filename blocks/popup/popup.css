@@ -1,0 +1,126 @@
+@charset 'utf-8';
+
+.popup {
+    position: relative;
+
+    display: none;
+}
+
+.popup__overfade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(21, 27, 34);
+    background-color: rgba(21, 27, 34, 0.71);
+
+    z-index: 100;
+}
+
+.popup__wrapper {
+    width: 530px;
+
+    position: relative;
+    top: 25%;
+
+    background-color: #1f2329;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    -webkit-box-shadow: 3px 3px 38px 0px rgba(0, 0, 0, 1);
+            box-shadow: 3px 3px 38px 0px rgb(0, 0, 0);
+            box-shadow: 3px 3px 38px 0px rgba(0, 0, 0, 1);
+}
+
+.popup__header {
+    position: relative;
+
+    height: 35px;
+
+    padding-left: 21px;
+
+    background-color: #414045;
+}
+
+.popup__header__title {
+    font-family: 'helioscondcregular', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    color: #e7e7e7;
+
+    text-transform: uppercase;
+
+    width: 350px;
+
+    position: absolute;
+}
+
+.popup__header__cancel {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+
+    width: 19px;
+    height: 19px;
+
+    /*background: url(popup__cancel-button.b64.png) right center no-repeat;*/
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbZJREFUeNqd1EsvQ0EYxvGqRSWqEan7ys6CWiAsKtgIXQolEtcPYM0XQCTWTSTCQiJxWfgChKUQcVnY2SgiaRdFgoT6v8fb9phzSJnkl7RzZp6ZMzNnCtLptMellKMLjahACR7xgAvsIWF2MsN8GEEY+zjGHVIIoBot6MQBtvDqFlaKWdxgzZrJD0VnOqXhc9ZgUggTPixiQP7nSSYS1X4+qfPqSMO4xrYn/5LW14xjKDOzCiyj2Bh1HPXGbHrRZtQFsIKgzCysi/lsG3UUfZhBvdZFMIFptNnaprR/l4Q14cR4hSPdpSIJ1MUe02fveLE31l1vkLAq3BoPrzBvC+zR+jcs4cxoH5ccCfNnt9YZeGDU7VhBzvIkOV79EXBpEMnOKFf6rTV0Fr/kSNg9alyCxmyvtqHr5LMOtjOwVnIk7BTNxsMkPmxrtIsFDSxEsb2xfmKXck7KEMues5x2hOx1eu6aXc7ZsuRkvs1Rfe+Y52+lQM9dAuuZz2kTdRj8Y1AUlV/9nbfGjJ651d9uDd39SQnStUz99z5rRQcOdUZv3+8zZwmiGyE5Nrp7z3rSz/WmTZqdPgGvXxwRQM+xWgAAAABJRU5ErkJggg==) right center no-repeat;
+
+
+    cursor: pointer;
+}
+
+.popup__header__cancel-hover {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    -webkit-transition: 0.1s opacity ease-in-out;
+       -moz-transition: 0.1s opacity ease-in-out;
+        -ms-transition: 0.1s opacity ease-in-out;
+         -o-transition: 0.1s opacity ease-in-out;
+            transition: 0.1s opacity ease-in-out;
+
+    /*background: url(popup__cancel-button_hover.b64.png) right center no-repeat;*/
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeNJREFUeNqUlEsoRGEUx+9MSc3YYJgUoiaUhcfarCSPIpKFWGCpkMWQQh4RyUjYWbCyMqQQsbKyYEUeM6UMJa/IYzbE/9T/Tl9fV/jXr7nz3XP/93znnu/YgoE0w0IZoBmUgEzgAnfgAuyAeRCWQE/NZfQhu2biADPgkNddIB/EggLQDZzgAEwwJiqbklkK2ATHoAPcGz9LMp0FWaAU2d2pmckbtsAqaPjFyOD9erAuz4VW0h2q2Si3NmD8XV+gH5yDEXObUuB9pvxkbh9MgWWwpxi0g2uum0oGZyBPMmsEC4qRyM+6bQAv1zrBNFgCtWYg6nXL51vErBSsaVsIgDcQR8M5vkD0AV61eKl1sZh5mKYq2Vq5YtjK9Qio4cdSdSo+YpbIhjQsDBe1tSELI9EDSLDzIskioFPJyFSvUkNVktCjmIVAtoWRX9laD+vkZGPrhjniY2eBq7SbV+BTqdEYqKBhDIjX4qvBrvRZKvssV2uPOvAMtpU1L43WtD47krNrns1J7rvJ+J9s7Lsw+s1nHqc+ToXBfxoNs7X61bP5zuat5JtcvxglMa5M+hFZRfR5dgOKOBGCnFfy3804N2s2yTElw9Frjh+r4SgZtnEgvtPwhF9WfsfBCygEPn7tqL4FGAA70H04tIsQygAAAABJRU5ErkJggg==) right center no-repeat;
+}
+
+.popup__header__cancel-hover:hover {
+    opacity: 1;
+
+    -webkit-transition: 0.1s opacity ease-in-out;
+       -moz-transition: 0.1s opacity ease-in-out;
+        -ms-transition: 0.1s opacity ease-in-out;
+         -o-transition: 0.1s opacity ease-in-out;
+            transition: 0.1s opacity ease-in-out;
+}
+
+.popup__header__cancel-hover-label {
+    position: absolute;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    color: #dbae1d;
+
+    text-decoration: underline;
+
+    opacity: 1;
+
+    left: -50px;
+    padding-right: 10px;
+
+    -webkit-transition: 0.1s opacity ease-in-out;
+       -moz-transition: 0.1s opacity ease-in-out;
+        -ms-transition: 0.1s opacity ease-in-out;
+         -o-transition: 0.1s opacity ease-in-out;
+            transition: 0.1s opacity ease-in-out;
+}
+
+.popup__container {
+    padding-bottom: 50px;
+}

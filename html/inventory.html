@@ -10,8 +10,8 @@
 	<link href="/css/zzima-header.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/patch.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/main.css" media="screen" rel="stylesheet" type="text/css" >
-	<link href="/css/jquery.powertip.css" media="screen" rel="stylesheet" type="text/css" >
-	<link href="/css/casino.css" media="screen" rel="stylesheet" type="text/css" >
+	<link href="/css/selectbox.css" media="screen" rel="stylesheet" type="text/css" >
+
 
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
@@ -22,8 +22,15 @@
 	<script type="text/javascript" src="/blocks/popup/popup.js"></script>
 	<script type="text/javascript" src="/blocks/settings/settings.js"></script>
 	<script type="text/javascript" src="/js/pages/account.js"></script>
-	<script type="text/javascript" src="/js/jquery.powertip.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.selectbox.min.js"></script>
 	<script type="text/javascript" src="/js/main.js"></script>
+	<script>
+		(function($) {
+			$(function() {
+				$('select').selectbox();
+			})
+		})(jQuery)
+	</script>
 
 </head>
 <body class="page body-z-head">
@@ -57,297 +64,157 @@
 
 <div class="background body-z-head">
 <div class="form-container">
-	<div class="form casino-page">
-		<div class="container">
-			<div class="casino-hat">
-				<div class="casino-hat__left">
-					<h1 class="east" title="North placement">Весення халява!</h1>
-					<p>
-						Сражайся за сотни тысяч призов! Рулетка позволит увеличить доход на наших проектах за счет увеличения количества платящих игроков, увеличения частоты платежей.  <a href="#">Правила</a>
-					</p>
-				</div>
-				<div class="casino-hat__right">
-					<div class="couter-block east" title="huihuihui">
-						<label>Jackpot:</label>
-							<ul id="count" class="count">
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-								<li><span>0</span></li>
-							</ul>
-					</div>
+
+	<div class="form">
+		<div class="form__nav">
+			<ul id="mainNav" >
+				<li><a href="account.html"><i class="i-profile"></i>Профиль</a></li>
+				<li><a href="rating.html"><i class="i-rating"></i>Рейтинг<sup>225</sup></a></li>
+				<li><a href="progress.html"><i class="i-progress"></i>Достижения</a></li>
+				<li><a href="shop.html"><i class="i-shop"></i>Магазин<sup>1250</sup></a></li>
+				<li><a class="active" href="javascript:;"><i class="i-inventory"></i>Инвентарь<sup>15</sup></a></li>
+			</ul>
+		</div>
+		<div class="form__content">
+			<div class="form__item form__inv">
+				<div class="form__title">Инвентарь</div>
+				<div class="row">
+					<p>Инвентарь предназаначен для активации твоих подарков и покупок из магазина. Для того чтобы активировать покупку или подарок достаточно нажать «Использовать» и ввести дополнителнительную информацию в появишемся окне.</p>
 				</div>
 			</div>
-			<div class="casino-body">
-				<div class="list-lately">
-					<label>Недавно выиграли:</label>
-					<ul>
-						<li class="actual">
-							<span class="icon">
-								<i class="icon-0_w24"> </i>
-							</span>
-							<h5>Доспехи бога</h5>
-							<span class="date">12/01/2014 18:47</span>
-							<span class="sign">@baddebadde</span>
-						</li>
-						<li>
-							<span class="icon">
-								<i class="icon-1_w24"></i>
-							</span>
-							<h5>20% бонус пополнения ZZGold  copy</h5>
-							<span class="date">12/01/2014 18:45</span>
-							<span class="sign">@steemeee</span>
-						</li>
-					</ul>
-				</div>
-				<div class="control-block jackpot"> <!-- first / win / jackpot -->
-						<div class="state state_first">
-							<div class="state-main">
-							<h2></h2>
-							<p>Испытай свою удачу!  Крути и выигрывай супер-призы!</p>
-							<i></i>
-						</div>
-						<a class="start-button" href="javascript:;">Крутануть</a>
-						<div class="sub">Бесплатные попытки: <span>3<span></div>
-					</div>
-					<div class="state state_win">
-						<div class="state-main">
-							<h2></h2>
-							<div class="info">
-								<h4>500 ZZGold</h4>
-								<p>
-									Ты можешь купить много полезного для своего персонажа или потратить их на сервисы
-								</p>
-								<div class="win-his">
-									<label>История выигрышей:</label>
-									<a href="javascript:;"><i class="icon-0_w22"></i></a>
-									<a href="javascript:;"><i class="icon-1_w22"></i></a>
-									<a href="javascript:;">
-										<i class="icon-2_w22"></i>
-										<span class="txt-popup">
-												<h4>Золотые монеты</h4>
-												<span>Стоимость: 140 ZZGold</span>
-												<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-										</span>
-									</a>
-									<a href="javascript:;"><i class="icon-3_w22"></i></a>
+			<div class="form__item form__themes">
+
+				<div class="form__title form__title__sub">Неактивные итемы</div>
+				<div class="row">
+					<div class="table">
+						<ul class="field_themes">
+							<li>
+								<div class="item_block item_tooltip">
+									<div class="img_wrapper">
+										<img src="/images/default-img1.png">
+										<div class="item_description">
+											<h3>Подпись на форуме</h3>
+											<div class="t-section"><span class="status gold_xs"></span> | <span>Zzima</span></div>
+										</div>
+										<div class="item_count">
+											10
+										</div>
+									</div>
+
+									<a href="javascript:;" id="j-use" class="t-button do-overlay">Использовать</a>
+									<div class="tooltip">
+										Здесь попап :)
+									</div>
 								</div>
-							</div>
-						</div>	
-						<a class="start-button" href="javascript:;">Крутануть</a>
-						<div class="sub">У вас недостаточно средств, пополните баланс</div>
-					</div>
-					<div class="state state_jackpot">
-						<div class="state-main">
-							<h2>
-								<span class="star star_1"></span>
-								<span class="star star_2"></span>
-								<span class="star star_3"></span>
-								<span class="star star_4"></span>
-								<span class="star star_5"></span>
-							</h2>
-							<div class="info">
-								<p>
-									Ты самый везучий человек на планете Земля!
-								</p>
-								<div class="win-his">
-									<label>История выигрышей:</label>
-									<a href="javascript:;"><i class="icon-0_w22"></i></a>
-									<a href="javascript:;"><i class="icon-1_w22"></i></a>
-									<a href="javascript:;" class="show-tip tip" 
-									title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22"></i></a>
-									<a href="javascript:;"><i class="icon-3_w22"></i></a>
+							</li>
+							<li>
+								<div class="item_block">
+									<div class="img_wrapper">
+										<img src="/images/default-img2.png">
+										<div class="item_description">
+											<h3>Меч «Доброволец» в две строки с названием</h3>
+											<div class="t-section"><span class="status silver_xs"></span> | <span>Forsaken World</span></div>
+										</div>
+										<div class="item_count">
+											8
+										</div>
+									</div>
+									<a href="#" class="t-button">Использовать</a>
 								</div>
-							</div>
-						</div>	
-						<a class="start-button" href="javascript:;">
-								<span class="txt">Крутануть</span>
-								<span class="light"></span>
-								<span class="light light_two active"></span>
-						</a>
-						<div class="sub">Бесплатные попытки: <span>3<span></div>
-					</div>
-				</div>
-				<div class="roll-wrapper">
-					<div class="sound-control toggle-active tip-roll show-tip tip" title="<p>Выключить саунд</p>">
-						<i></i>
-					</div>
-					<i class="luminous luminous_top"></i>
-					<i class="luminous luminous_bottom"></i>
-						<ul class="roll-container">
-							<li>
-									<div class="content content-t0 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i>500</div>
-									<div class="triangle triangle_0 show-tip"></div>
-									<div class="triangle triangle_0 color"></div>
 							</li>
 							<li>
-								<div class="content content-t1 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_1 show-tip"></div>
-								<div class="triangle triangle_1 color"></div>
+								<div class="item_block">
+									<div class="img_wrapper">
+										<img src="/images/default-img1.png">
+										<div class="item_description">
+											<h3>Подпись на форуме</h3>
+											<div class="t-section"><span class="status gold_xs"></span> | <span>Zzima</span></div>
+										</div>
+									</div>
+									<a href="#" class="t-button">Использовать</a>
+								</div>
 							</li>
 							<li>
-								<div class="content content-t2 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22 glow"></i></div>
-								<div class="triangle triangle_2 show-tip"></div>
-								<div class="triangle triangle_2 color"></div>
+								<div class="item_block">
+									<div class="img_wrapper">
+										<img src="/images/default-img2.png">
+										<div class="item_description">
+											<h3>Меч «Доброволец» в две строки с названием</h3>
+											<div class="t-section"><span class="status silver_xs"></span> | <span>Forsaken World</span></div>
+										</div>
+										<div class="item_count">
+											4
+										</div>
+									</div>
+									<a href="#" class="t-button">Использовать</a>
+								</div>
 							</li>
 							<li>
-								<div class="content content-t3 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-3_w22"></i>4</div>
-								<div class="triangle triangle_3 show-tip"></div>
-								<div class="triangle triangle_3 color"></div>
+								<div class="item_block">
+									<div class="img_wrapper">
+										<img src="/images/default-img1.png">
+										<div class="item_description">
+											<h3>Подпись на форуме</h3>
+											<div class="t-section"><span class="status gold_xs"></span> | <span>Zzima</span></div>
+										</div>
+									</div>
+									<a href="#" class="t-button">Использовать</a>
+								</div>
 							</li>
-							<li>
-								<div class="content content-t4 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-4_w22"></i></div>
-								<div class="triangle triangle_4 show-tip"></div>
-								<div class="triangle triangle_4 color"></div>
-							</li>
-							<li>
-								<div class="content content-t5 tip jackpot" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"></div>
-								<div class="triangle triangle_5 show-tip"></div>
-								<div class="triangle triangle_5 color"></div>
-							</li>
-							<li>
-								<div class="content content-t6 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-6_w22"></i>x3</div>
-								<div class="triangle triangle_6 show-tip"></div>
-								<div class="triangle triangle_6 color"></div>
-							</li>
-							<li>
-								<div class="content content-t7 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i>70</div>
-								<div class="triangle triangle_7 show-tip"></div>
-								<div class="triangle triangle_7 color"></div>
-							</li>
-							<li>
-								<div class="content content-t8 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_8 show-tip"></div>
-								<div class="triangle triangle_8 color"></div>
-							</li>
-							<li>
-								<div class="content content-t9 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22 glow"></i></div>
-								<div class="triangle triangle_9 show-tip"></div>
-								<div class="triangle triangle_9 color"></div>
-							</li>
-							<li>
-								<div class="content content-t10 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-3_w22"></i>20</div>
-								<div class="triangle triangle_10 show-tip"></div>
-								<div class="triangle triangle_10 color"></div>
-							</li>
-							<li>
-								<div class="content content-t11 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-4_w22"></i></div>
-								<div class="triangle triangle_11 show-tip"></div>
-								<div class="triangle triangle_11 color"></div>
-							</li>
-							<li>
-								<div class="content content-t12 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-5_w22"></i>1500</div>
-								<div class="triangle triangle_12 show-tip"></div>
-								<div class="triangle triangle_12 color"></div>
-							</li>
-							<li>
-								<div class="content content-t13 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-6_w22 glow"></i>300</div>
-								<div class="triangle triangle_13 show-tip"></div>
-								<div class="triangle triangle_13 color"></div>
-							</li>
-							<li>
-								<div class="content content-t14 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i></div>
-								<div class="triangle triangle_14 show-tip"></div>
-								<div class="triangle triangle_14 color"></div>
-							</li>
-							<li>
-								<div class="content content-t15 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_15 show-tip"></div>
-								<div class="triangle triangle_15 color"></div>
-							</li>
-							<li class="shadow-round"></li>
 						</ul>
-						<div class="roll-arrow"><i class="luminous"></i></div>
+					</div>
 				</div>
 			</div>
+			<div class="form__item form__themes">
+				<div class="form__title form__title__sub">Активные итемы</div>
+				<div class="row">
+					<div class="table">
+						<ul class="field field_themes">
+							<li>
+								<div class="item_block">
+									<div class="img_wrapper">
+										<img src="/images/default-img1.png">
+
+										<div class="item_description">
+											<h3>Подпись на форуме</h3>
+											<div class="t-section"><span class="status gold_xs"></span> | <span>Zzima</span></div>
+											<div class="item_footer">Использовано: <span>10 июля 2013</span></div>
+											<div class="item_footer">Активно до: <span>16 августа 2013</span></div>
+										</div>
+										<div style="width: 40%" class="img_cover"></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item_block">
+									<div class="img_wrapper">
+										<img src="/images/default-img2.png">
+										<div style="width: 20%" class="img_cover"></div>
+									</div>
+									<h3>Меч «Доброволец» в две строки с названием</h3>
+									<div class="t-section"><span class="status silver_xs"></span> | <span>Zzima</span></div>
+									<div class="item_footer">Использовано: <span>10 июля 2013</span></div>
+									<div class="item_footer">Активно до: <span>16 августа 2013</span></div>
+
+								</div>
+							</li>
+							<li>
+								<div class="item_block">
+									<div class="img_wrapper">
+										<img src="/images/default-img1.png">
+										<div style="width: 90%" class="img_cover"></div>
+									</div>
+									<h3>Подпись на форуме</h3>
+									<div class="t-section"><span><span class="status gold_xs"></span> | <span>Zzima</span></div>
+									<div class="item_footer">Использовано: <span>10 июля 2013</span></div>
+									<div class="item_footer">Активно до: <span>16 августа 2013</span></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -715,6 +582,51 @@
 </div><!--z-foo-->
 
 </div>
+
+<div class="d-overlay"></div>
+<div id="j-use_popup" class="d-popup d-popup__use">
+	<h2 class="d-popup_title"><span class="g-left"><i></i>Подтверждение выбора</span><a href="javascript:;" class="d-popup_close g-right g-transition"><span>Отмена</span><i>&nbsp;</i></a></h2>
+	<div class="d-popup_body">
+		<div class="ov-h">
+			<img src="/images/default-img2.png">
+			<div class="item-description">
+				<h5>Меч «Доброволец»</h5>
+				<span class="sub-txt">Forsaken World</span>
+			</div>
+		</div>
+		<div class="clearfix">
+			<p class="sub-txt">Для использования вещи вам потребуется передать ее вашему игровому персонажу:</p>
+			<div class="section">
+				<select>
+					<option>Сервер</option>
+					<option>Пункт 1</option>
+					<option>Пункт 2</option>
+					<option>Пункт 3</option>
+				</select>
+			</div>
+			<div class="section">
+				<select>
+					<option>Персонаж</option>
+					<option>Пункт 1</option>
+					<option>Пункт 2</option>
+					<option>Пункт 3</option>
+
+				</select>
+			</div>
+			<a href="#confirmation" class="t-button next_popup">Использовать</a>
+		</div>
+
+
+	</div>
+</div>
+<div id="confirmation_popup" class="d-popup d-popup__confirmation">
+	<div class="d-popup_body txt-center">
+		<h4>Предмет передан!</h4>
+		<span class="sub-txt">Проверьте своего персонажа :)</span>
+		<a href="javascript:;" class="t-button d-popup_close">Закрыть</a>
+	</div>
+</div>
+
 
 </body>
 </html>

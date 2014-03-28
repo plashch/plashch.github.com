@@ -1,0 +1,1929 @@
+/* line 31, ../sass/casino.scss */
+body {
+  font-family: "Arial Narrow", Arial, helvetica, sans-serif; }
+
+/* line 34, ../sass/casino.scss */
+.h1, h1, h2, h3, h4, h5, h6 {
+  font-family: "Arial Narrow", Arial, helvetica, sans-serif;
+  font-weight: 100;
+  margin: 0; }
+
+/* line 39, ../sass/casino.scss */
+.left, .casino-page .casino-hat__left, .casino-page .casino-hat__right .couter-block label, .count li {
+  float: left; }
+
+/* line 42, ../sass/casino.scss */
+.right, .casino-page .casino-hat__right {
+  float: right; }
+
+/* line 45, ../sass/casino.scss */
+.casino-page {
+  background: url('/images/casino-bg.jpg?1392894256') 0 0 black;
+  height: 672px; }
+  /* line 48, ../sass/casino.scss */
+  .casino-page * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  /* line 51, ../sass/casino.scss */
+  .casino-page .container {
+    padding: 22px 26px 22px 42px; }
+  /* line 54, ../sass/casino.scss */
+  .casino-page h1 {
+    font-size: 48px;
+    margin: 0; }
+  /* line 58, ../sass/casino.scss */
+  .casino-page .casino-hat__left {
+    width: 52%; }
+    /* line 61, ../sass/casino.scss */
+    .casino-page .casino-hat__left p {
+      color: #a5db81;
+      font-size: 12px;
+      margin: 7px 0; }
+    /* line 66, ../sass/casino.scss */
+    .casino-page .casino-hat__left a {
+      color: #ffb818; }
+      /* line 68, ../sass/casino.scss */
+      .casino-page .casino-hat__left a:hover {
+        text-decoration: none; }
+  /* line 75, ../sass/casino.scss */
+  .casino-page .casino-hat__right .couter-block {
+    width: 418px;
+    height: 80px;
+    background: url(/images/counter-bg.png) 0 0; }
+    /* line 79, ../sass/casino.scss */
+    .casino-page .casino-hat__right .couter-block label {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: "Arial Narrow", Arial, helvetica, sans-serif;
+      display: block;
+      heigh: 60px;
+      line-height: 60px;
+      text-align: right;
+      width: 112px;
+      margin: 0 13px 0 8px; }
+
+/* line 92, ../sass/casino.scss */
+.count {
+  padding: 10px 3px;
+  overflow: hidden;
+  position: relative; }
+  /* line 96, ../sass/casino.scss */
+  .count:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 45px;
+    width: 258px;
+    background: url(/images/counter-shadow.png) 0 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+  /* line 107, ../sass/casino.scss */
+  .count li {
+    display: block;
+    margin: 0 1px 0 2px;
+    color: #2d302b;
+    font-family: "Arial Black";
+    font-size: 24px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    height: 41px;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+    -webkit-transition-delay: 0;
+    -moz-transition: all 0.1s ease-in-out 0;
+    -o-transition: all 0.1s ease-in-out 0;
+    transition: all 0.1s ease-in-out 0; }
+    /* line 119, ../sass/casino.scss */
+    .count li span {
+      display: block;
+      width: 33px;
+      heigh: 41px;
+      line-height: 41px;
+      text-align: center; }
+      /* line 123, ../sass/casino.scss */
+      .count li span.next {
+        margin-top: -41px; }
+
+/* line 129, ../sass/casino.scss */
+.casino-body {
+  clear: both;
+  padding: 8px 0; }
+  /* line 132, ../sass/casino.scss */
+  .casino-body .list-lately {
+    background: url('/images/rgbapng/00090391-5.png?1394010123');
+    background: rgba(0, 9, 3, 0.57);
+    -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 8px 10px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 8px 10px rgba(0, 0, 0, 0.31);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 8px 10px rgba(0, 0, 0, 0.31);
+    padding: 13px 42px;
+    margin-left: -42px;
+    width: 650px;
+    overflow: hidden; }
+    /* line 139, ../sass/casino.scss */
+    .casino-body .list-lately ul {
+      white-space: nowrap; }
+    /* line 142, ../sass/casino.scss */
+    .casino-body .list-lately label {
+      font-size: 12px;
+      width: 70px;
+      display: block;
+      float: left;
+      padding: 8px 0; }
+    /* line 149, ../sass/casino.scss */
+    .casino-body .list-lately li {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+      opacity: 0.4;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-background-clip: padding;
+      -moz-background-clip: padding;
+      background-clip: padding-box;
+      background-color: #000;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      zoom: 1;
+      *display: inline;
+      padding: 8px 10px 8px 74px;
+      position: relative;
+      height: 59px;
+      margin-right: 6px;
+      overflow: hidden;
+      cursor: pointer;
+      -webkit-transition: all 0.1s ease-in-out;
+      -webkit-transition-delay: 0;
+      -moz-transition: all 0.1s ease-in-out 0;
+      -o-transition: all 0.1s ease-in-out 0;
+      transition: all 0.1s ease-in-out 0; }
+      /* line 162, ../sass/casino.scss */
+      .casino-body .list-lately li.actual {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+        color: #a4a8a5; }
+        /* line 165, ../sass/casino.scss */
+        .casino-body .list-lately li.actual:after {
+          display: none; }
+        /* line 168, ../sass/casino.scss */
+        .casino-body .list-lately li.actual h5 {
+          color: #fff; }
+      /* line 172, ../sass/casino.scss */
+      .casino-body .list-lately li:hover {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1;
+        color: #fff; }
+    /* line 177, ../sass/casino.scss */
+    .casino-body .list-lately h5 {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 13px; }
+    /* line 182, ../sass/casino.scss */
+    .casino-body .list-lately .date {
+      color: #a5db81;
+      font-size: 11px; }
+    /* line 186, ../sass/casino.scss */
+    .casino-body .list-lately .sign {
+      white-space: nowrap;
+      overflow: hidden;
+      -ms-text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: block;
+      width: 56px;
+      font-size: 11px;
+      font-weight: bold; }
+    /* line 193, ../sass/casino.scss */
+    .casino-body .list-lately .icon {
+      border: 2px solid #ffad00;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-background-clip: padding;
+      -moz-background-clip: padding;
+      background-clip: padding-box;
+      background-color: rgba(0, 0, 0, 0.17);
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.56), inset 0 0 0 rgba(255, 255, 255, 0.37);
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.56), inset 0 0 0 rgba(255, 255, 255, 0.37);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.56), inset 0 0 0 rgba(255, 255, 255, 0.37);
+      position: absolute;
+      height: 42px;
+      width: 45px;
+      left: 10px;
+      text-align: center;
+      line-height: 53px; }
+      /* line 205, ../sass/casino.scss */
+      .casino-body .list-lately .icon i {
+        display: inline-block;
+        height: 26px;
+        width: 25px;
+        background-image: url('/images/icons/main-icons.png?1393362217');
+        -webkit-background-size: auto 100%;
+        -moz-background-size: auto 100%;
+        -o-background-size: auto 100%;
+        background-size: auto 100%; }
+
+/* line 215, ../sass/casino.scss */
+.control-block {
+  border: 4px solid #ffad00;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background-color: rgba(1, 38, 14, 0.65);
+  -webkit-box-shadow: 0 1px 10px black;
+  -moz-box-shadow: 0 1px 10px black;
+  box-shadow: 0 1px 10px black;
+  height: 400px;
+  width: 325px;
+  background: url('/images/rgbapng/00090391-5.png?1394010123');
+  background: rgba(0, 9, 3, 0.57);
+  margin-top: 20px;
+  text-align: center;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  float: left; }
+  /* line 228, ../sass/casino.scss */
+  .control-block.win {
+    -webkit-box-shadow: 0 0 25px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 25px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 25px #ff9c00, 1px 0 10px black; }
+  /* line 231, ../sass/casino.scss */
+  .control-block.jackpot {
+    -webkit-animation: jack-pot-border .5s linear infinite;
+    -moz-animation: jack-pot-border .5s linear infinite;
+    -o-animation: jack-pot-border .5s linear infinite;
+    animation: jack-pot-border .5s linear infinite; }
+  /* line 237, ../sass/casino.scss */
+  .control-block .state-main {
+    height: 248px; }
+  /* line 240, ../sass/casino.scss */
+  .control-block h2 {
+    color: #fffefe;
+    margin: 3px 0 0 0;
+    background: url('/images/state-bg.png?1393362218') 50% 0;
+    height: 111px;
+    font-size: 68px;
+    font-weight: bold;
+    text-shadow: 0 0 32px rgba(255, 255, 255, 0.8); }
+  /* line 249, ../sass/casino.scss */
+  .control-block p {
+    color: #a5db81;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 28px;
+    margin: 0 0 9px; }
+  /* line 256, ../sass/casino.scss */
+  .control-block .sub {
+    font-size: 11px; }
+  /* line 260, ../sass/casino.scss */
+  .control-block .state_first i {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    height: 78px;
+    width: 66px;
+    background: url('/images/icons/state-arrows.png?1393362215'); }
+  /* line 268, ../sass/casino.scss */
+  .control-block .state_win h2 {
+    background-position: 50% -107px;
+    height: 90px;
+    margin-bottom: -11px; }
+  /* line 273, ../sass/casino.scss */
+  .control-block .state_win .state-main {
+    background: url('/images/win-bg.png?1393362217') 0 0 no-repeat;
+    overflow: hidden; }
+  /* line 279, ../sass/casino.scss */
+  .control-block .state_jackpot h2 {
+    background-position: 50% -210px;
+    margin-top: 37px;
+    height: 90px;
+    margin-bottom: -21px;
+    position: relative;
+    z-index: 10; }
+  /* line 287, ../sass/casino.scss */
+  .control-block .state_jackpot .state-main {
+    overflow: hidden;
+    position: relative;
+    background: url('/images/jackpot-bg_top.png?1393962095') 0 0 no-repeat; }
+    /* line 292, ../sass/casino.scss */
+    .control-block .state_jackpot .state-main:after {
+      content: '';
+      background: url('/images/jackpot-bg.png?1393965520') 0 0 no-repeat;
+      height: 380px;
+      width: 380px;
+      position: absolute;
+      top: -129px;
+      left: -28px;
+      -webkit-animation: jack-pot-bg 20s linear infinite;
+      -moz-animation: jack-pot-bg 20s linear infinite;
+      -o-animation: jack-pot-bg 20s linear infinite;
+      animation: jack-pot-bg 20s linear infinite; }
+  /* line 306, ../sass/casino.scss */
+  .control-block .state_jackpot .info {
+    position: relative;
+    z-index: 10; }
+    /* line 309, ../sass/casino.scss */
+    .control-block .state_jackpot .info p {
+      font-size: 18px;
+      font-weight: 100; }
+  /* line 318, ../sass/casino.scss */
+  .control-block .info h4 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 255, 190, 0.8);
+    margin: 0; }
+  /* line 325, ../sass/casino.scss */
+  .control-block .info p {
+    font-size: 12px;
+    color: #fff;
+    margin: 5px 0; }
+  /* line 332, ../sass/casino.scss */
+  .control-block .start-button {
+    font-family: "HeliosCondC";
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    background: url('/images/Button_roulette.png?1393501994') 0 0;
+    width: 317px;
+    height: 111px;
+    font-size: 33px;
+    line-height: 77px;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
+    margin-bottom: 3px;
+    position: relative;
+    -webkit-transition: opacity 0.05s ease-in-out;
+    -moz-transition: opacity 0.05s ease-in-out;
+    -o-transition: opacity 0.05s ease-in-out;
+    transition: opacity 0.05s ease-in-out; }
+    /* line 347, ../sass/casino.scss */
+    .control-block .start-button:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -46px;
+      left: 0;
+      height: 120px;
+      width: 120px;
+      margin-left: -10px;
+      background: url('/images/button-light.png?1393505135') 0 0;
+      z-index: 25;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+      -webkit-animation: button-flare 10s cubic-bezier(0, 0.77, 0.46, 1) infinite;
+      -moz-animation: button-flare 10s cubic-bezier(0, 0.77, 0.46, 1) infinite;
+      -o-animation: button-flare 10s cubic-bezier(0, 0.77, 0.46, 1) infinite;
+      animation: button-flare 10s cubic-bezier(0, 0.77, 0.46, 1) infinite; }
+    /* line 364, ../sass/casino.scss */
+    .control-block .start-button:before {
+      content: '';
+      display: block;
+      height: 120px;
+      width: 317px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      -webkit-transition: opacity 0.2s ease-in-out;
+      -moz-transition: opacity 0.2s ease-in-out;
+      -o-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0;
+      z-index: 1;
+      background: url('/images/Button_roulette.png?1393501994') 0 -120px; }
+    /* line 377, ../sass/casino.scss */
+    .control-block .start-button .txt {
+      display: inline-block;
+      padding-top: 4px;
+      -webkit-transform: rotateX(32deg);
+      -moz-transform: rotateX(32deg);
+      -ms-transform: rotateX(32deg);
+      -o-transform: rotateX(32deg);
+      transform: rotateX(32deg);
+      position: relative;
+      z-index: 15;
+      font-family: "Arial Narrow", Arial, helvetica, sans-serif; }
+    /* line 385, ../sass/casino.scss */
+    .control-block .start-button .light {
+      content: '';
+      display: block;
+      height: 120px;
+      width: 317px;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      background: url('/images/patch_of_reflected_light.png?1393490919') 0 0;
+      -webkit-transition: opacity 3s ease-in-out;
+      -moz-transition: opacity 3s ease-in-out;
+      -o-transition: opacity 3s ease-in-out;
+      transition: opacity 3s ease-in-out;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+      opacity: 0; }
+      /* line 396, ../sass/casino.scss */
+      .control-block .start-button .light.light_two {
+        background-position: 0 -120px; }
+      /* line 400, ../sass/casino.scss */
+      .control-block .start-button .light.active {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+        opacity: 0.8; }
+    /* line 404, ../sass/casino.scss */
+    .control-block .start-button:hover {
+      -webkit-transition: text-shadow 0.05s ease-in-out;
+      -moz-transition: text-shadow 0.05s ease-in-out;
+      -o-transition: text-shadow 0.05s ease-in-out;
+      transition: text-shadow 0.05s ease-in-out;
+      text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.84); }
+      /* line 408, ../sass/casino.scss */
+      .control-block .start-button:hover:before {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1; }
+      /* line 412, ../sass/casino.scss */
+      .control-block .start-button:hover .light.active {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+        opacity: 1; }
+    /* line 416, ../sass/casino.scss */
+    .control-block .start-button:active, .control-block .start-button.disable {
+      -webkit-transition: text-shadow 0 ease-in-out;
+      -moz-transition: text-shadow 0 ease-in-out;
+      -o-transition: text-shadow 0 ease-in-out;
+      transition: text-shadow 0 ease-in-out;
+      background-position: 0 -240px;
+      text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2); }
+      /* line 418, ../sass/casino.scss */
+      .control-block .start-button:active:after, .control-block .start-button.disable:after {
+        display: none !important; }
+      /* line 421, ../sass/casino.scss */
+      .control-block .start-button:active:before, .control-block .start-button.disable:before {
+        display: none; }
+      /* line 426, ../sass/casino.scss */
+      .control-block .start-button:active .light.active, .control-block .start-button.disable .light.active {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+        opacity: 0.4; }
+      /* line 429, ../sass/casino.scss */
+      .control-block .start-button:active .light, .control-block .start-button.disable .light {
+        margin-top: 7px; }
+      /* line 432, ../sass/casino.scss */
+      .control-block .start-button:active .txt, .control-block .start-button.disable .txt {
+        position: relative;
+        padding-top: 12px;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+        opacity: 0.8; }
+      /* line 437, ../sass/casino.scss */
+      .control-block .start-button:active.disable, .control-block .start-button.disable.disable {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+        opacity: 0.6;
+        cursor: default; }
+
+/* line 444, ../sass/casino.scss */
+.win-his {
+  border-top: 1px solid rgba(98, 117, 110, 0.3);
+  margin: 0 22px 0 13px;
+  text-align: left;
+  padding: 20px 0 0; }
+  /* line 446, ../sass/casino.scss */
+  .state_jackpot .win-his {
+    border-top: 0; }
+  /* line 452, ../sass/casino.scss */
+  .win-his label {
+    font-size: 11px;
+    width: 70px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    text-align: left; }
+  /* line 458, ../sass/casino.scss */
+  .win-his a {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background: url('/images/rgbapng/0000002b-5.png?1394010124');
+    background: rgba(0, 0, 0, 0.17);
+    height: 42px;
+    width: 46px;
+    text-align: center;
+    line-height: 42px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    margin-left: 3px;
+    line-height: 51px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -webkit-transition-delay: 0;
+    -moz-transition: all 0.1s ease-in-out 0;
+    -o-transition: all 0.1s ease-in-out 0;
+    transition: all 0.1s ease-in-out 0; }
+    /* line 470, ../sass/casino.scss */
+    .win-his a:first-child {
+      margin-left: 0; }
+    /* line 474, ../sass/casino.scss */
+    .win-his a:hover {
+      border-color: #ffad00;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.56), inset 0 0 0 rgba(255, 255, 255, 0.37);
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.56), inset 0 0 0 rgba(255, 255, 255, 0.37);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.56), inset 0 0 0 rgba(255, 255, 255, 0.37); }
+    /* line 478, ../sass/casino.scss */
+    .win-his a i {
+      display: inline-block;
+      background-image: url('/images/icons/main-icons.png?1393362217');
+      height: 24px;
+      width: 22px;
+      -webkit-background-size: auto 100%;
+      -moz-background-size: auto 100%;
+      -o-background-size: auto 100%;
+      background-size: auto 100%; }
+
+/* line 487, ../sass/casino.scss */
+.state {
+  display: none; }
+
+/* line 491, ../sass/casino.scss */
+.win .state_win {
+  display: block; }
+
+/* line 496, ../sass/casino.scss */
+.first .state_first {
+  display: block; }
+
+/* line 501, ../sass/casino.scss */
+.jackpot .state_jackpot {
+  display: block; }
+
+/* line 505, ../sass/casino.scss */
+.roll-wrapper {
+  z-index: 0;
+  behavior: url('/css/PIE.htc');
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 666px;
+  width: 666px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 36px 4px black;
+  -moz-box-shadow: 0 0 36px 4px black;
+  box-shadow: 0 0 36px 4px black;
+  position: absolute;
+  right: 6px;
+  top: 118px;
+  margin-right: -120px;
+  padding: 18px; }
+  /* line 514, ../sass/casino.scss */
+  .roll-wrapper:before {
+    background: url('/images/edge_roll.png?1393362221') 3px 0 no-repeat;
+    behavior: url('/css/PIE.htc');
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    height: 677px;
+    width: 677px;
+    text-align: center;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -5px; }
+
+/* line 524, ../sass/casino.scss */
+.triangle {
+  display: block;
+  margin: 25px auto;
+  height: 336px;
+  width: 336px;
+  position: absolute;
+  margin-left: 240px;
+  overflow: visible;
+  z-index: 30;
+  cursor: pointer; }
+  /* line 534, ../sass/casino.scss */
+  .win .triangle.color {
+    z-index: 15;
+    box-shadow: 0 0 0 8px #FFF, 0 0 16px 0px #000; }
+  /* line 538, ../sass/casino.scss */
+  .triangle.color {
+    z-index: 10; }
+  /* line 541, ../sass/casino.scss */
+  .triangle:hover + .color {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9; }
+
+/* line 549, ../sass/casino.scss */
+.triangle_0 {
+  margin-left: -248px;
+  margin-top: 147px; }
+  /* line 552, ../sass/casino.scss */
+  .triangle_0.color {
+    background: #bb099f; }
+
+/* line 556, ../sass/casino.scss */
+.triangle_1 {
+  margin-left: -218px;
+  margin-top: -4px; }
+  /* line 559, ../sass/casino.scss */
+  .triangle_1.color {
+    background: #8f0bb6; }
+
+/* line 564, ../sass/casino.scss */
+.triangle_2 {
+  margin-left: -132px;
+  margin-top: -132px; }
+  /* line 567, ../sass/casino.scss */
+  .triangle_2.color {
+    background: #2274bd; }
+
+/* line 571, ../sass/casino.scss */
+.triangle_3 {
+  margin-left: -4px;
+  margin-top: -218px; }
+  /* line 574, ../sass/casino.scss */
+  .triangle_3.color {
+    background: #04c8c6; }
+
+/* line 578, ../sass/casino.scss */
+.triangle_4 {
+  margin-left: 147px;
+  margin-top: -248px; }
+  /* line 581, ../sass/casino.scss */
+  .triangle_4.color {
+    background: #0fa462; }
+
+/* line 585, ../sass/casino.scss */
+.triangle_5 {
+  margin-left: 298px;
+  margin-top: -218px; }
+  /* line 588, ../sass/casino.scss */
+  .triangle_5.color {
+    background: #000000; }
+
+/* line 592, ../sass/casino.scss */
+.triangle_6 {
+  margin-left: 426px;
+  margin-top: -132px; }
+  /* line 595, ../sass/casino.scss */
+  .triangle_6.color {
+    background: #127719; }
+
+/* line 599, ../sass/casino.scss */
+.triangle_7 {
+  margin-left: 512px;
+  margin-top: -4px; }
+  /* line 602, ../sass/casino.scss */
+  .triangle_7.color {
+    background: #07921b; }
+
+/* line 606, ../sass/casino.scss */
+.triangle_8 {
+  margin-left: 541px;
+  margin-top: 147px; }
+  /* line 609, ../sass/casino.scss */
+  .triangle_8.color {
+    background: #5ba60d; }
+
+/* line 613, ../sass/casino.scss */
+.triangle_9 {
+  margin-left: 512px;
+  margin-top: 298px; }
+  /* line 616, ../sass/casino.scss */
+  .triangle_9.color {
+    background: #98c707; }
+
+/* line 620, ../sass/casino.scss */
+.triangle_10 {
+  margin-left: 427px;
+  margin-top: 427px; }
+  /* line 623, ../sass/casino.scss */
+  .triangle_10.color {
+    background: #d5d149; }
+
+/* line 627, ../sass/casino.scss */
+.triangle_11 {
+  margin-left: 298px;
+  margin-top: 512px; }
+  /* line 630, ../sass/casino.scss */
+  .triangle_11.color {
+    background: #e1c907; }
+
+/* line 634, ../sass/casino.scss */
+.triangle_12 {
+  margin-left: 147px;
+  margin-top: 542px; }
+  /* line 637, ../sass/casino.scss */
+  .triangle_12.color {
+    background: #e1a205; }
+
+/* line 642, ../sass/casino.scss */
+.triangle_13 {
+  margin-left: -4px;
+  margin-top: 511px; }
+  /* line 645, ../sass/casino.scss */
+  .triangle_13.color {
+    background: #cc6b04; }
+
+/* line 649, ../sass/casino.scss */
+.triangle_14 {
+  margin-left: -132px;
+  margin-top: 426px; }
+  /* line 652, ../sass/casino.scss */
+  .triangle_14.color {
+    background: #c54600; }
+
+/* line 656, ../sass/casino.scss */
+.triangle_15 {
+  margin-left: -217px;
+  margin-top: 298px; }
+  /* line 659, ../sass/casino.scss */
+  .triangle_15.color {
+    background: #b81609; }
+
+/* line 663, ../sass/casino.scss */
+.roll-container {
+  behavior: url('/css/PIE.htc');
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 630px;
+  width: 630px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 0; }
+  /* line 668, ../sass/casino.scss */
+  .roll-container .content {
+    position: absolute;
+    height: 28px;
+    width: 216px;
+    text-align: left;
+    color: #fff;
+    font-family: "Arial Narrow";
+    font-size: 24px;
+    z-index: 20;
+    font-weight: bold;
+    padding-left: 18px;
+    cursor: pointer; }
+    /* line 680, ../sass/casino.scss */
+    .roll-container .content i {
+      display: inline-block;
+      background-image: url('/images/icons/main-icons.png?1393362217');
+      height: 24px;
+      width: 22px;
+      -webkit-background-size: auto 100%;
+      -moz-background-size: auto 100%;
+      -o-background-size: auto 100%;
+      background-size: auto 100%;
+      margin-right: 12px;
+      position: relative;
+      top: 2px;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
+      /* line 690, ../sass/casino.scss */
+      .roll-container .content i.glow:after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: url('/images/icons/glow.png?1393362215') 0 0 no-repeat;
+        width: 54px;
+        height: 28px;
+        top: -14px;
+        left: -17px; }
+  /* line 702, ../sass/casino.scss */
+  .roll-container .content-t0 {
+    top: 301px;
+    left: 19px; }
+  /* line 706, ../sass/casino.scss */
+  .roll-container .content-t1 {
+    top: 230px;
+    left: 34px; }
+  /* line 710, ../sass/casino.scss */
+  .roll-container .content-t2 {
+    top: 168px;
+    left: 74px; }
+  /* line 714, ../sass/casino.scss */
+  .roll-container .content-t3 {
+    top: 127px;
+    left: 135px; }
+  /* line 718, ../sass/casino.scss */
+  .roll-container .content-t4 {
+    top: 112px;
+    left: 206px; }
+  /* line 722, ../sass/casino.scss */
+  .roll-container .content-t5 {
+    top: 126px;
+    left: 279px; }
+  /* line 726, ../sass/casino.scss */
+  .roll-container .content-t6 {
+    top: 167px;
+    left: 341px; }
+  /* line 730, ../sass/casino.scss */
+  .roll-container .content-t7 {
+    top: 228px;
+    left: 381px; }
+  /* line 734, ../sass/casino.scss */
+  .roll-container .content-t8 {
+    top: 300px;
+    left: 395px; }
+  /* line 738, ../sass/casino.scss */
+  .roll-container .content-t9 {
+    top: 372px;
+    left: 381px; }
+  /* line 742, ../sass/casino.scss */
+  .roll-container .content-t10 {
+    top: 433px;
+    left: 340px; }
+  /* line 746, ../sass/casino.scss */
+  .roll-container .content-t11 {
+    top: 474px;
+    left: 279px; }
+  /* line 750, ../sass/casino.scss */
+  .roll-container .content-t12 {
+    top: 489px;
+    left: 207px; }
+  /* line 754, ../sass/casino.scss */
+  .roll-container .content-t13 {
+    top: 475px;
+    left: 135px; }
+  /* line 758, ../sass/casino.scss */
+  .roll-container .content-t14 {
+    top: 434px;
+    left: 74px; }
+  /* line 762, ../sass/casino.scss */
+  .roll-container .content-t15 {
+    top: 373px;
+    left: 33px; }
+  /* line 767, ../sass/casino.scss */
+  .roll-container .jackpot:after {
+    display: block;
+    content: '';
+    height: 43px;
+    width: 246px;
+    position: absolute;
+    background: url('/images/icons/jackpot-icon.png?1393362216') 0 0 no-repeat;
+    top: -7px;
+    left: 16px; }
+
+/* line 779, ../sass/casino.scss */
+.luminous {
+  background: url('/images/icons/luminous-i.png?1393362215');
+  height: 28px;
+  width: 28px;
+  display: block;
+  position: absolute; }
+
+/* line 787, ../sass/casino.scss */
+.roll-arrow {
+  background: url('/images/icons/roll-arrow.png?1393362216') 0 0 no-repeat;
+  width: 111px;
+  height: 64px;
+  position: absolute;
+  top: 306px;
+  left: 259px;
+  z-index: 40; }
+  /* line 795, ../sass/casino.scss */
+  .roll-arrow .luminous {
+    top: 16px;
+    left: 62px; }
+
+/* line 801, ../sass/casino.scss */
+.roll-wrapper .luminous_top {
+  top: 253px;
+  left: -2px; }
+/* line 805, ../sass/casino.scss */
+.roll-wrapper .luminous_bottom {
+  top: 383px;
+  left: -3px; }
+
+/* line 810, ../sass/casino.scss */
+.sound-control {
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  behavior: url('/css/PIE.htc');
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  background-color: #000;
+  position: absolute;
+  right: 143px;
+  top: -8px;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 10px black;
+  -moz-box-shadow: 4px 4px 10px black;
+  box-shadow: 4px 4px 10px black;
+  line-height: 38px;
+  -webkit-transition: box-shadow 0.03s ease-in-out;
+  -webkit-transition-delay: 0;
+  -moz-transition: box-shadow 0.03s ease-in-out 0;
+  -o-transition: box-shadow 0.03s ease-in-out 0;
+  transition: box-shadow 0.03s ease-in-out 0; }
+  /* line 822, ../sass/casino.scss */
+  .sound-control:hover {
+    -webkit-box-shadow: 0 -4px 10px rgba(162, 255, 0, 0.3), 4px 4px 10px black;
+    -moz-box-shadow: 0 -4px 10px rgba(162, 255, 0, 0.3), 4px 4px 10px black;
+    box-shadow: 0 -4px 10px rgba(162, 255, 0, 0.3), 4px 4px 10px black; }
+    /* line 824, ../sass/casino.scss */
+    .sound-control:hover i {
+      background-position: 0 -15px; }
+  /* line 828, ../sass/casino.scss */
+  .sound-control:hover:after {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 0 -4px 10px rgba(162, 255, 0, 0.1);
+    -moz-box-shadow: 0 -4px 10px rgba(162, 255, 0, 0.1);
+    box-shadow: 0 -4px 10px rgba(162, 255, 0, 0.1); }
+  /* line 840, ../sass/casino.scss */
+  .sound-control.active i {
+    background-position: 0 -15px; }
+  /* line 844, ../sass/casino.scss */
+  .sound-control i {
+    display: inline-block;
+    height: 15px;
+    width: 17px;
+    background: url('/images/icons/sound-i.png?1393362216') no-repeat 0 0; }
+
+/* line 851, ../sass/casino.scss */
+.shadow-round {
+  z-index: 20;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 12px solid rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 7px rgba(255, 255, 255, 0.2); }
+
+/* line 860, ../sass/casino.scss */
+.d-popup {
+  z-index: 999; }
+  /* line 862, ../sass/casino.scss */
+  .d-popup h4 {
+    font-weight: bold;
+    margin-bottom: 10px; }
+
+/* line 867, ../sass/casino.scss */
+.d-popup_body {
+  padding: 76px 14px 71px; }
+  /* line 869, ../sass/casino.scss */
+  .d-popup_body.error {
+    padding: 87px 14px 62px;
+    border: 1px solid #492828; }
+    /* line 872, ../sass/casino.scss */
+    .d-popup_body.error h4 {
+      margin-bottom: 22px; }
+  /* line 876, ../sass/casino.scss */
+  .d-popup_body .sub-txt {
+    font-size: 12px;
+    width: 418px;
+    margin: 0 auto 38px;
+    line-height: 20px; }
+
+/* line 883, ../sass/casino.scss */
+.x-close {
+  position: absolute;
+  right: 13px;
+  top: 11px; }
+
+/* line 888, ../sass/casino.scss */
+.t-button {
+  font-size: 19px;
+  color: #746443; }
+
+/* line 892, ../sass/casino.scss */
+.d-popup__confirmation .t-button {
+  display: inline-block;
+  padding: 0 22px;
+  width: auto; }
+
+/* line 900, ../sass/casino.scss */
+#powerTip {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  text-align: center;
+  width: 220px;
+  padding: 23px 20px;
+  white-space: normal;
+  margin-top: 5px; }
+  /* line 907, ../sass/casino.scss */
+  #powerTip h6 {
+    font-size: 22px;
+    margin-bottom: -2px; }
+  /* line 911, ../sass/casino.scss */
+  #powerTip span {
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 11px; }
+  /* line 916, ../sass/casino.scss */
+  #powerTip p {
+    font-size: 12px;
+    color: #a5db81;
+    margin: 0; }
+
+/* line 922, ../sass/casino.scss */
+.luminous {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0; }
+  /* line 924, ../sass/casino.scss */
+  .luminous.flashing {
+    -webkit-animation: flashing .2s linear infinite;
+    -moz-animation: flashing .2s linear infinite;
+    -o-animation: flashing .2s linear infinite;
+    animation: flashing .2s linear infinite; }
+
+/* line 932, ../sass/casino.scss */
+.star {
+  background: url('/images/stars_jackpot.png?1394000508') no-repeat;
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5; }
+
+/* line 937, ../sass/casino.scss */
+.star_1 {
+  height: 39px;
+  width: 39px;
+  background-position: 0 0;
+  z-index: 5;
+  top: -46px;
+  left: 117px;
+  -webkit-animation: jack-pot-stars 5s linear infinite;
+  -moz-animation: jack-pot-stars 5s linear infinite;
+  -o-animation: jack-pot-stars 5s linear infinite;
+  animation: jack-pot-stars 5s linear infinite; }
+
+/* line 949, ../sass/casino.scss */
+.star_2 {
+  height: 40px;
+  width: 42px;
+  background-position: 0 -39px;
+  top: 36px;
+  right: -11px;
+  -webkit-animation: jack-pot-bg 10s linear infinite;
+  -moz-animation: jack-pot-bg 10s linear infinite;
+  -o-animation: jack-pot-bg 10s linear infinite;
+  animation: jack-pot-bg 10s linear infinite; }
+
+/* line 960, ../sass/casino.scss */
+.star_3 {
+  width: 24px;
+  height: 23px;
+  background-position: 0 -79px;
+  top: 9px;
+  left: 6px;
+  -webkit-animation: jack-pot-stars 6s linear infinite;
+  -moz-animation: jack-pot-stars 6s linear infinite;
+  -o-animation: jack-pot-stars 6s linear infinite;
+  animation: jack-pot-stars 6s linear infinite; }
+
+/* line 971, ../sass/casino.scss */
+.star_4 {
+  height: 10px;
+  width: 10px;
+  background-position: 0 -102px;
+  top: -17px;
+  left: 57px;
+  -webkit-animation: jack-pot-bg 5s linear infinite;
+  -moz-animation: jack-pot-bg 5s linear infinite;
+  -o-animation: jack-pot-bg 5s linear infinite;
+  animation: jack-pot-bg 5s linear infinite; }
+
+/* line 982, ../sass/casino.scss */
+.star_5 {
+  height: 10px;
+  width: 10px;
+  background-position: 0 -112px;
+  top: -14px;
+  right: 66px;
+  -webkit-animation: jack-pot-stars 5s linear infinite;
+  -moz-animation: jack-pot-stars 5s linear infinite;
+  -o-animation: jack-pot-stars 5s linear infinite;
+  animation: jack-pot-stars 5s linear infinite; }
+
+@-webkit-keyframes flashing {
+  /* line 1002, ../sass/casino.scss */
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+  /* line 1003, ../sass/casino.scss */
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  /* line 1004, ../sass/casino.scss */
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+
+@-moz-keyframes flashing {
+  /* line 1009, ../sass/casino.scss */
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+  /* line 1010, ../sass/casino.scss */
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  /* line 1011, ../sass/casino.scss */
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+
+@-o-keyframes flashing {
+  /* line 1016, ../sass/casino.scss */
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+  /* line 1017, ../sass/casino.scss */
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  /* line 1018, ../sass/casino.scss */
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+
+@keyframes flashing {
+  /* line 1023, ../sass/casino.scss */
+  0% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+  /* line 1024, ../sass/casino.scss */
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0; }
+
+  /* line 1025, ../sass/casino.scss */
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; } }
+
+@-webkit-keyframes button-flare {
+  /* line 1032, ../sass/casino.scss */
+  0% {
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -ms-transform: scale(-1);
+    -o-transform: scale(-1);
+    transform: scale(-1); }
+
+  /* line 1035, ../sass/casino.scss */
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0); }
+
+  /* line 1040, ../sass/casino.scss */
+  75% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+  /* line 1043, ../sass/casino.scss */
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    left: 75%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }
+
+@-moz-keyframes button-flare {
+  /* line 1052, ../sass/casino.scss */
+  0% {
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -ms-transform: scale(-1);
+    -o-transform: scale(-1);
+    transform: scale(-1); }
+
+  /* line 1055, ../sass/casino.scss */
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0); }
+
+  /* line 1060, ../sass/casino.scss */
+  75% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+  /* line 1063, ../sass/casino.scss */
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    left: 75%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }
+
+@-o-keyframes button-flare {
+  /* line 1072, ../sass/casino.scss */
+  0% {
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -ms-transform: scale(-1);
+    -o-transform: scale(-1);
+    transform: scale(-1); }
+
+  /* line 1075, ../sass/casino.scss */
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0); }
+
+  /* line 1080, ../sass/casino.scss */
+  75% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+  /* line 1083, ../sass/casino.scss */
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    left: 75%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes button-flare {
+  /* line 1092, ../sass/casino.scss */
+  0% {
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -ms-transform: scale(-1);
+    -o-transform: scale(-1);
+    transform: scale(-1); }
+
+  /* line 1095, ../sass/casino.scss */
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0); }
+
+  /* line 1100, ../sass/casino.scss */
+  75% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+  /* line 1103, ../sass/casino.scss */
+  100% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    left: 75%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes jack-pot-bg {
+  /* line 1114, ../sass/casino.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 1117, ../sass/casino.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-moz-keyframes jack-pot-bg {
+  /* line 1124, ../sass/casino.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 1127, ../sass/casino.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-o-keyframes jack-pot-bg {
+  /* line 1134, ../sass/casino.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 1137, ../sass/casino.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes jack-pot-bg {
+  /* line 1144, ../sass/casino.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 1147, ../sass/casino.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes jack-pot-stars {
+  /* line 1156, ../sass/casino.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 1159, ../sass/casino.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-moz-keyframes jack-pot-stars {
+  /* line 1166, ../sass/casino.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 1169, ../sass/casino.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-o-keyframes jack-pot-stars {
+  /* line 1176, ../sass/casino.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 1179, ../sass/casino.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@keyframes jack-pot-stars {
+  /* line 1186, ../sass/casino.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 1189, ../sass/casino.scss */
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes jack-pot-border {
+  /* line 1198, ../sass/casino.scss */
+  0% {
+    -webkit-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 14px #ff9c00, 1px 0 10px black; }
+
+  /* line 1201, ../sass/casino.scss */
+  50% {
+    -webkit-box-shadow: 0 0 24px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 24px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 24px #ff9c00, 1px 0 10px black; }
+
+  /* line 1204, ../sass/casino.scss */
+  100% {
+    -webkit-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 14px #ff9c00, 1px 0 10px black; } }
+
+@-moz-keyframes jack-pot-border {
+  /* line 1211, ../sass/casino.scss */
+  0% {
+    -webkit-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 14px #ff9c00, 1px 0 10px black; }
+
+  /* line 1214, ../sass/casino.scss */
+  50% {
+    -webkit-box-shadow: 0 0 24px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 24px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 24px #ff9c00, 1px 0 10px black; }
+
+  /* line 1217, ../sass/casino.scss */
+  100% {
+    -webkit-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 14px #ff9c00, 1px 0 10px black; } }
+
+@-o-keyframes jack-pot-border {
+  /* line 1224, ../sass/casino.scss */
+  0% {
+    -webkit-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 14px #ff9c00, 1px 0 10px black; }
+
+  /* line 1227, ../sass/casino.scss */
+  50% {
+    -webkit-box-shadow: 0 0 24px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 24px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 24px #ff9c00, 1px 0 10px black; }
+
+  /* line 1230, ../sass/casino.scss */
+  100% {
+    -webkit-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 14px #ff9c00, 1px 0 10px black; } }
+
+@keyframes jack-pot-border {
+  /* line 1237, ../sass/casino.scss */
+  0% {
+    -webkit-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 14px #ff9c00, 1px 0 10px black; }
+
+  /* line 1240, ../sass/casino.scss */
+  50% {
+    -webkit-box-shadow: 0 0 24px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 24px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 24px #ff9c00, 1px 0 10px black; }
+
+  /* line 1243, ../sass/casino.scss */
+  100% {
+    -webkit-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    -moz-box-shadow: 0 0 14px #ff9c00, 1px 0 10px black;
+    box-shadow: 0 0 14px #ff9c00, 1px 0 10px black; } }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_0 {
+  -webkit-transform: rotate(45deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(45deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(45deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(45deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(45deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_1 {
+  -webkit-transform: rotate(67.5deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(67.5deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(67.5deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(67.5deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(67.5deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_2 {
+  -webkit-transform: rotate(90deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(90deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(90deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(90deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(90deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_3 {
+  -webkit-transform: rotate(112.5deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(112.5deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(112.5deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(112.5deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(112.5deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_4 {
+  -webkit-transform: rotate(135deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(135deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(135deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(135deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(135deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_5 {
+  -webkit-transform: rotate(157.5deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(157.5deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(157.5deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(157.5deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(157.5deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_6 {
+  -webkit-transform: rotate(180deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(180deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(180deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(180deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(180deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_7 {
+  -webkit-transform: rotate(202.5deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(202.5deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(202.5deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(202.5deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(202.5deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_8 {
+  -webkit-transform: rotate(225deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(225deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(225deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(225deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(225deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_9 {
+  -webkit-transform: rotate(247.5deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(247.5deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(247.5deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(247.5deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(247.5deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_10 {
+  -webkit-transform: rotate(270deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(270deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(270deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(270deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(270deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_11 {
+  -webkit-transform: rotate(292.5deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(292.5deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(292.5deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(292.5deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(292.5deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_12 {
+  -webkit-transform: rotate(315deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(315deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(315deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(315deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(315deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_13 {
+  -webkit-transform: rotate(337.5deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(337.5deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(337.5deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(337.5deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(337.5deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_14 {
+  -webkit-transform: rotate(360deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(360deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(360deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(360deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(360deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1252, ../sass/casino.scss */
+.triangle_15 {
+  -webkit-transform: rotate(382.5deg) skew(-33.8deg, -33.8deg);
+  -moz-transform: rotate(382.5deg) skew(-33.8deg, -33.8deg);
+  -ms-transform: rotate(382.5deg) skew(-33.8deg, -33.8deg);
+  -o-transform: rotate(382.5deg) skew(-33.8deg, -33.8deg);
+  transform: rotate(382.5deg) skew(-33.8deg, -33.8deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t0 {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t1 {
+  -webkit-transform: rotate(22.5deg);
+  -moz-transform: rotate(22.5deg);
+  -ms-transform: rotate(22.5deg);
+  -o-transform: rotate(22.5deg);
+  transform: rotate(22.5deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t2 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t3 {
+  -webkit-transform: rotate(67.5deg);
+  -moz-transform: rotate(67.5deg);
+  -ms-transform: rotate(67.5deg);
+  -o-transform: rotate(67.5deg);
+  transform: rotate(67.5deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t4 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t5 {
+  -webkit-transform: rotate(112.5deg);
+  -moz-transform: rotate(112.5deg);
+  -ms-transform: rotate(112.5deg);
+  -o-transform: rotate(112.5deg);
+  transform: rotate(112.5deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t6 {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t7 {
+  -webkit-transform: rotate(157.5deg);
+  -moz-transform: rotate(157.5deg);
+  -ms-transform: rotate(157.5deg);
+  -o-transform: rotate(157.5deg);
+  transform: rotate(157.5deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t8 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t9 {
+  -webkit-transform: rotate(202.5deg);
+  -moz-transform: rotate(202.5deg);
+  -ms-transform: rotate(202.5deg);
+  -o-transform: rotate(202.5deg);
+  transform: rotate(202.5deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t10 {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t11 {
+  -webkit-transform: rotate(247.5deg);
+  -moz-transform: rotate(247.5deg);
+  -ms-transform: rotate(247.5deg);
+  -o-transform: rotate(247.5deg);
+  transform: rotate(247.5deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t12 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t13 {
+  -webkit-transform: rotate(292.5deg);
+  -moz-transform: rotate(292.5deg);
+  -ms-transform: rotate(292.5deg);
+  -o-transform: rotate(292.5deg);
+  transform: rotate(292.5deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t14 {
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg); }
+
+/* line 1259, ../sass/casino.scss */
+.content-t15 {
+  -webkit-transform: rotate(337.5deg);
+  -moz-transform: rotate(337.5deg);
+  -ms-transform: rotate(337.5deg);
+  -o-transform: rotate(337.5deg);
+  transform: rotate(337.5deg); }
+
+/* line 1272, ../sass/casino.scss */
+.icon-0_w22 {
+  background-position: 0px 0; }
+
+/* line 1272, ../sass/casino.scss */
+.icon-1_w22 {
+  background-position: -24px 0; }
+
+/* line 1272, ../sass/casino.scss */
+.icon-2_w22 {
+  background-position: -48px 0; }
+
+/* line 1272, ../sass/casino.scss */
+.icon-3_w22 {
+  background-position: -72px 0; }
+
+/* line 1272, ../sass/casino.scss */
+.icon-4_w22 {
+  background-position: -96px 0; }
+
+/* line 1272, ../sass/casino.scss */
+.icon-5_w22 {
+  background-position: -120px 0; }
+
+/* line 1272, ../sass/casino.scss */
+.icon-6_w22 {
+  background-position: -144px 0; }
+
+/* line 1272, ../sass/casino.scss */
+.icon-7_w22 {
+  background-position: -168px 0; }
+
+/* line 1277, ../sass/casino.scss */
+.icon-0_w24 {
+  background-position: 0px 0; }
+
+/* line 1277, ../sass/casino.scss */
+.icon-1_w24 {
+  background-position: -26px 0; }
+
+/* line 1277, ../sass/casino.scss */
+.icon-2_w24 {
+  background-position: -52px 0; }
+
+/* line 1277, ../sass/casino.scss */
+.icon-3_w24 {
+  background-position: -78px 0; }
+
+/* line 1277, ../sass/casino.scss */
+.icon-4_w24 {
+  background-position: -104px 0; }
+
+/* line 1277, ../sass/casino.scss */
+.icon-5_w24 {
+  background-position: -130px 0; }
+
+/* line 1277, ../sass/casino.scss */
+.icon-6_w24 {
+  background-position: -156px 0; }
+
+/* line 1277, ../sass/casino.scss */
+.icon-7_w24 {
+  background-position: -182px 0; }

@@ -10,7 +10,6 @@
 	<link href="/css/zzima-header.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/patch.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/main.css" media="screen" rel="stylesheet" type="text/css" >
-	<link href="/css/jquery.powertip.css" media="screen" rel="stylesheet" type="text/css" >
 	<link href="/css/casino.css" media="screen" rel="stylesheet" type="text/css" >
 
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
@@ -22,12 +21,10 @@
 	<script type="text/javascript" src="/blocks/popup/popup.js"></script>
 	<script type="text/javascript" src="/blocks/settings/settings.js"></script>
 	<script type="text/javascript" src="/js/pages/account.js"></script>
-	<script type="text/javascript" src="/js/jquery.powertip.min.js"></script>
 	<script type="text/javascript" src="/js/main.js"></script>
-
 </head>
 <body class="page body-z-head">
-
+<div class="d-overlay"></div>
 
 <div class="z-head">
 	<div class="z-head__i">
@@ -61,13 +58,13 @@
 		<div class="container">
 			<div class="casino-hat">
 				<div class="casino-hat__left">
-					<h1 class="east" title="North placement">Весення халява!</h1>
+					<h1>Весення халява!</h1>
 					<p>
 						Сражайся за сотни тысяч призов! Рулетка позволит увеличить доход на наших проектах за счет увеличения количества платящих игроков, увеличения частоты платежей.  <a href="#">Правила</a>
 					</p>
 				</div>
 				<div class="casino-hat__right">
-					<div class="couter-block east" title="huihuihui">
+					<div class="couter-block">
 						<label>Jackpot:</label>
 							<ul id="count" class="count">
 								<li><span>0</span></li>
@@ -103,17 +100,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="control-block jackpot"> <!-- first / win / jackpot -->
-						<div class="state state_first">
-							<div class="state-main">
-							<h2></h2>
-							<p>Испытай свою удачу!  Крути и выигрывай супер-призы!</p>
-							<i></i>
-						</div>
-						<a class="start-button" href="javascript:;">Крутануть</a>
-						<div class="sub">Бесплатные попытки: <span>3<span></div>
-					</div>
-					<div class="state state_win">
+				<div class="control-block win">
+							<div class="state state_win">
 						<div class="state-main">
 							<h2></h2>
 							<div class="info">
@@ -137,210 +125,96 @@
 								</div>
 							</div>
 						</div>	
-						<a class="start-button" href="javascript:;">Крутануть</a>
+						<a class="start-button do-overlay" id="noManey" href="javascript:;">Крутануть</a>
 						<div class="sub">У вас недостаточно средств, пополните баланс</div>
 					</div>
-					<div class="state state_jackpot">
-						<div class="state-main">
-							<h2>
-								<span class="star star_1"></span>
-								<span class="star star_2"></span>
-								<span class="star star_3"></span>
-								<span class="star star_4"></span>
-								<span class="star star_5"></span>
-							</h2>
-							<div class="info">
-								<p>
-									Ты самый везучий человек на планете Земля!
-								</p>
-								<div class="win-his">
-									<label>История выигрышей:</label>
-									<a href="javascript:;"><i class="icon-0_w22"></i></a>
-									<a href="javascript:;"><i class="icon-1_w22"></i></a>
-									<a href="javascript:;" class="show-tip tip" 
-									title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
 
-									"><i class="icon-2_w22"></i></a>
-									<a href="javascript:;"><i class="icon-3_w22"></i></a>
-								</div>
-							</div>
-						</div>	
-						<a class="start-button" href="javascript:;">
-								<span class="txt">Крутануть</span>
-								<span class="light"></span>
-								<span class="light light_two active"></span>
-						</a>
-						<div class="sub">Бесплатные попытки: <span>3<span></div>
-					</div>
 				</div>
 				<div class="roll-wrapper">
-					<div class="sound-control toggle-active tip-roll show-tip tip" title="<p>Выключить саунд</p>">
+					<div class="sound-control toggle-active">
 						<i></i>
 					</div>
 					<i class="luminous luminous_top"></i>
 					<i class="luminous luminous_bottom"></i>
 						<ul class="roll-container">
-							<li>
-									<div class="content content-t0 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i>500</div>
-									<div class="triangle triangle_0 show-tip"></div>
+							<li class="win">
+									<div class="content content-t0"><i class="icon-0_w22"></i>500</div>
+									<div class="triangle triangle_0"></div>
 									<div class="triangle triangle_0 color"></div>
 							</li>
 							<li>
-								<div class="content content-t1 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_1 show-tip"></div>
+								<div class="content content-t1"><i class="icon-1_w22"></i></div>
+								<div class="triangle triangle_1"></div>
 								<div class="triangle triangle_1 color"></div>
 							</li>
 							<li>
-								<div class="content content-t2 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22 glow"></i></div>
-								<div class="triangle triangle_2 show-tip"></div>
+								<div class="content content-t2"><i class="icon-2_w22 glow"></i></div>
+								<div class="triangle triangle_2"></div>
 								<div class="triangle triangle_2 color"></div>
 							</li>
 							<li>
-								<div class="content content-t3 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-3_w22"></i>4</div>
-								<div class="triangle triangle_3 show-tip"></div>
+								<div class="content content-t3"><i class="icon-3_w22"></i>4</div>
+								<div class="triangle triangle_3"></div>
 								<div class="triangle triangle_3 color"></div>
 							</li>
 							<li>
-								<div class="content content-t4 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-4_w22"></i></div>
-								<div class="triangle triangle_4 show-tip"></div>
+								<div class="content content-t4"><i class="icon-4_w22"></i></div>
+								<div class="triangle triangle_4"></div>
 								<div class="triangle triangle_4 color"></div>
 							</li>
 							<li>
-								<div class="content content-t5 tip jackpot" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"></div>
-								<div class="triangle triangle_5 show-tip"></div>
+								<div class="content content-t5 jackpot"></div>
+								<div class="triangle triangle_5"></div>
 								<div class="triangle triangle_5 color"></div>
 							</li>
 							<li>
-								<div class="content content-t6 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-6_w22"></i>x3</div>
-								<div class="triangle triangle_6 show-tip"></div>
+								<div class="content content-t6"><i class="icon-6_w22"></i>x3</div>
+								<div class="triangle triangle_6"></div>
 								<div class="triangle triangle_6 color"></div>
 							</li>
 							<li>
-								<div class="content content-t7 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i>70</div>
-								<div class="triangle triangle_7 show-tip"></div>
+								<div class="content content-t7"><i class="icon-0_w22"></i>70</div>
+								<div class="triangle triangle_7"></div>
 								<div class="triangle triangle_7 color"></div>
 							</li>
 							<li>
-								<div class="content content-t8 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_8 show-tip"></div>
+								<div class="content content-t8"><i class="icon-1_w22"></i></div>
+								<div class="triangle triangle_8"></div>
 								<div class="triangle triangle_8 color"></div>
 							</li>
 							<li>
-								<div class="content content-t9 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-2_w22 glow"></i></div>
-								<div class="triangle triangle_9 show-tip"></div>
+								<div class="content content-t9"><i class="icon-2_w22 glow"></i></div>
+								<div class="triangle triangle_9"></div>
 								<div class="triangle triangle_9 color"></div>
 							</li>
 							<li>
-								<div class="content content-t10 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-3_w22"></i>20</div>
-								<div class="triangle triangle_10 show-tip"></div>
+								<div class="content content-t10"><i class="icon-3_w22"></i>20</div>
+								<div class="triangle triangle_10"></div>
 								<div class="triangle triangle_10 color"></div>
 							</li>
 							<li>
-								<div class="content content-t11 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-4_w22"></i></div>
-								<div class="triangle triangle_11 show-tip"></div>
+								<div class="content content-t11"><i class="icon-4_w22"></i></div>
+								<div class="triangle triangle_11"></div>
 								<div class="triangle triangle_11 color"></div>
 							</li>
 							<li>
-								<div class="content content-t12 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-5_w22"></i>1500</div>
-								<div class="triangle triangle_12 show-tip"></div>
+								<div class="content content-t12"><i class="icon-5_w22"></i>1500</div>
+								<div class="triangle triangle_12"></div>
 								<div class="triangle triangle_12 color"></div>
 							</li>
 							<li>
-								<div class="content content-t13 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-6_w22 glow"></i>300</div>
-								<div class="triangle triangle_13 show-tip"></div>
+								<div class="content content-t13"><i class="icon-6_w22 glow"></i>300</div>
+								<div class="triangle triangle_13"></div>
 								<div class="triangle triangle_13 color"></div>
 							</li>
 							<li>
-								<div class="content content-t14 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-0_w22"></i></div>
-								<div class="triangle triangle_14 show-tip"></div>
+								<div class="content content-t14"><i class="icon-0_w22"></i></div>
+								<div class="triangle triangle_14"></div>
 								<div class="triangle triangle_14 color"></div>
 							</li>
 							<li>
-								<div class="content content-t15 tip" title="
-										<h6>Золотые монеты</h6>
-										<span>Стоимость: 140 ZZGold</span>
-										<p>Повышает привлекательность игрока-лузера среди персов-девушек. Не шутка.</p>
-
-									"><i class="icon-1_w22"></i></div>
-								<div class="triangle triangle_15 show-tip"></div>
+								<div class="content content-t15"><i class="icon-1_w22"></i></div>
+								<div class="triangle triangle_15"></div>
 								<div class="triangle triangle_15 color"></div>
 							</li>
 							<li class="shadow-round"></li>
@@ -716,5 +590,14 @@
 
 </div>
 
+	<div id="noManey_popup" class="d-popup d-popup__confirmation">
+		<div class="d-popup_body txt-center">
+			<a href="javascript:;" class="d-popup_close x-close g-right g-transition"><i>&nbsp;</i></a>
+			<h4>Недостаточно средств :(</h4>
+			<span class="sub-txt">Бесплатные игры закончились, детка.  Каждая следующая попытка будет
+для тебя стоить 15 ZZGold.</span>
+			<a href="javascript:;" class="t-button t-button-c">Пополнить баланс</a>
+		</div>
+	</div>
 </body>
 </html>

@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+.settings {
+    width: 330px;
+
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settings__pseudolink-hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    color: #fefefe;
+
+    border-bottom: 1px dashed;
+
+    -webkit-transition: 0.3s color ease-in-out;
+       -moz-transition: 0.3s color ease-in-out;
+        -ms-transition: 0.3s color ease-in-out;
+         -o-transition: 0.3s color ease-in-out;
+            transition: 0.3s color ease-in-out;
+
+    cursor: pointer;
+}
+
+.settings__pseudolink-hover:hover {
+    color: #dbae1d;
+
+    -webkit-transition: 0.3s color ease-in-out;
+       -moz-transition: 0.3s color ease-in-out;
+        -ms-transition: 0.3s color ease-in-out;
+         -o-transition: 0.3s color ease-in-out;
+            transition: 0.3s color ease-in-out;
+}
+
+.settings__container {
+    margin-top: 15px;
+
+    display: none;
+}
+
+.settings__container__label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+    color: #fefefe;
+}
+
+.settings .settings__button {
+    margin-top: 15px;
+}

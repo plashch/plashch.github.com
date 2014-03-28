@@ -1,0 +1,181 @@
+.footer {
+    width: 955px;
+    height: 52px;
+
+    background-color: #11131a;
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+
+.footer__logo {
+    display: block;
+
+    position: absolute;
+    top: 11px;
+    left: 8px;
+}
+
+.footer__logo__img {
+    border: 0;
+}
+
+.footer__copyright {
+    position: absolute;
+    top: 16px;
+    left: 80px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+    line-height: 12px;
+
+    color: rgb(100, 103, 114);
+    color: rgba(100, 103, 114, 0.4);
+}
+
+.footer__what-is-zzima {
+    width: 190px;
+    border-left: 1px solid #24262c;
+
+    line-height: 50px;
+
+    position: absolute;
+    right: 185px;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.footer__what-is-zzima__label {
+    font-family: 'helioscregular', sans-serif;
+    font-size: 10px;
+
+    color: #646772;
+
+    border-bottom: 1px dashed;
+}
+
+.footer__what-is-zzima:hover {
+    background-color: #1f2329;
+}
+
+.footer__what-is-zzima:hover .footer__what-is-zzima__label {
+    border-bottom: none;
+}
+
+
+.footer__terms {
+    width: 184px;
+    border-left: 1px solid #24262c;
+
+    line-height: 50px;
+
+    position: absolute;
+    right: 0;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.footer__terms__label {
+    font-family: 'helioscregular', sans-serif;
+    font-size: 10px;
+
+    color: #646772;
+
+    border-bottom: 1px dashed;
+}
+
+.footer__terms:hover {
+    background-color: #1f2329;
+}
+
+.footer__terms:hover .footer__terms__label {
+    border-bottom: none;
+}
+
+.footer__menu__list {
+    display: none;
+
+    list-style-type: none;
+
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-bottom: 10px;
+
+    background-color: #1f2329;
+
+    margin: 0;
+
+    position: absolute;
+    margin-top: -95px;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.footer__terms:hover .footer__menu__list {
+    display: block;
+}
+
+.footer__menu__listitem {
+    display: block;
+
+    width: 205px;
+    line-height: 25px;
+
+    font-family: 'helioscregular', sans-serif;
+    font-size: 13px;
+
+    color: #646772;
+
+    text-align: left;
+}
+
+.footer__menu__listitem:hover {
+    color: #d3ab24;
+}
+
+.footer__seo-text {
+    display: none;
+    height: 55px;
+
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+
+    background-color: #1f2329;
+
+    font-family: 'helioscregular', sans-serif;
+    font-size: 12px;
+
+    line-height: 17px;
+
+    color: #646772;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.footer.footer__opened {
+    height: 140px;
+}
+
+.footer.footer__opened .footer__seo-text {
+    display: block;
+}
+
+.footer.footer__opened .footer__what-is-zzima {
+    background-color: #1f2329;
+}
+
+.footer.footer__opened .footer__what-is-zzima__label {
+    border-bottom: none;
+}

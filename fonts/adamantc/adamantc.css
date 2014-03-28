@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'adamantcregular';
+    src: url('adamantc-webfont.eot');
+    src: url('adamantc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('adamantc-webfont.woff') format('woff'),
+         url('adamantc-webfont.ttf') format('truetype'),
+         url('adamantc-webfont.svg#adamantcregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
