@@ -1,0 +1,1 @@
+function showShein(){return console.log("1"),$("#shein").addClass("show"),setTimeout(function(){$("#shein").removeClass("show")},5e3),!1}

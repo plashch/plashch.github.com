@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Яндекс.Волонтёр — добровольная помощь по всему миру</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+          <div class="header__main">
+              <div class="header__logo">
+                <div class="logo logo_lang_ru"><a class="logo__link" href="http://www.yandex.ru">Яндекс</a></div>
+                <a class="nameplate i-font i-font_face_textbook i-bem nameplate_scroller_yes nameplate_js_inited" href="#" tabindex="-1" data-bem="{&quot;nameplate&quot;:{&quot;scroller&quot;:true}}"><span class="nameplate__text i-font i-font_face_textbook">Волонтёр</span></a>
+
+                </div>
+
+          </div>
+
+
+
+
+          <div class="header__nav">
+                <a class="header__action header__action_type_srv"  title="Табло сервисов"><i class="header__action-i"></i></a>
+                <div class="dropdown-menu dropdown-menu_user_yes dropdown-menu_theme_ffffff i-bem dropdown-menu_js_inited dropdown-menu_action_closed">
+                  <a class="link user user_menu_yes user_hide-name_no i-bem user_js_inited">
+                    <span class="user__icon" style="background-image: url(https://avatars.yandex.net/get-yapic/252508128/islands-retina-middle?rnd=1437418033735);"></span>
+                  </a>
+                </div>
+          </div>
+          <a id="add" class="add" href="#">Создать событие</a>
+      </div>
+      <div class="sub-header">
+
+        <h1>Все волонтёрские события на одной карте </h1>
+
+        <div class="heading__aside">
+          <div class="categories i-bem categories_js_inited">
+            <span class="radio-button radio-button_size_s radio-button_adaptive_yes radio-button_theme_normal i-bem radio-button_has-hidden_yes radio-button_visibility_visible radio-button_js_inited">
+              <label class="radio-button__radio radio-button__radio_checked_yes radio-button__radio_pressed_yes radio-button__radio_side_left categories__item radio-button__radio_visibility_visible" for="uniq1437416230377199">
+                <input class="radio-button__control" value="default" autocomplete="off" checked="checked" id="uniq1437416230377199" type="radio" name="categories-top">
+                <span class="radio-button__text">Рядом с вами</span>
+              </label>
+              <label class="radio-button__radio radio-button__radio_next-for-pressed_yes categories__item radio-button__radio_side_right radio-button__radio_visibility_visible"  for="uniq1437416230377200">
+                <input class="radio-button__control" value="vtm" autocomplete="off" id="uniq1437416230377200" type="radio" name="categories-top">
+                <span class="radio-button__text">И во всем мире</span>
+              </label>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="filter" class="filter__wrapper">
+      <ul class="filter">
+        <li><div class="select select__coverage">
+          Рядом
+          <ul>
+            <li class="selected nearby">Рядом с вами</li>
+            <li class="wordwide">Во всем мире</li>
+          </ul>
+        </div></li>
+        <li>
+          <input id="inputPlace" paleholder="в ..." class="input">
+        </li>
+          <li><div class="select select__type">
+            Тип
+            <ul>
+              <li class="selected">Тип</li>
+              <li>Помощь животным</li>
+              <li>Помощь детям</li>
+              <li>Благотворительные акции</li>
+              <li>Социальные программы</li>
+              <li>Организация мероприятия</li>
+            </ul>
+          </div></li>
+          <li><div class="select select__when">Когда
+            <ul>
+              <li class="selected">Когда</li>
+              <li>Сегодня</li>
+              <li>Завтра</li>
+              <li>На выходные</li>
+              <li>На неделе</li>
+              <li>Выбрать дату</li>
+            </ul>
+          </div></li>
+
+
+
+      </ul>
+      <ul class="filter filter-glob">
+        <li><div class="select select__coverage">
+          Во всем мире
+          <ul>
+            <li class="nearby">Рядом с вами</li>
+            <li class="selected wordwide">Во всем мире</li>
+          </ul>
+        </div></li>
+          <li>
+            <div class="select">
+              Часть света
+              <ul>
+                <li class="selected">Часть света</li>
+                <li>Азия</li>
+                <li>Америка</li>
+                <li>Антарктида</li>
+                <li>Африка</li>
+                <li>Австралия и Океания</li>
+                <li>Европа</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="select">
+              Язык
+              <ul>
+                <li class="selected">Язык</li>
+                <li>Немецкий</li>
+                <li>Французкий</li>
+                <li>Итальяснкий</li>
+                <li>Исканский</li>
+                <li>Китайский</li>
+                <li>Английский</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="select select__type">
+              Тип
+              <ul>
+                <li class="selected">Тип</li>
+                <li>Помощь животным</li>
+                <li>Помощь детям</li>
+                <li>Археология</li>
+                <li>Туризм</li>
+              </ul>
+            </div>
+          </li>
+
+          <li><div class="select">Когда
+            <ul>
+              <li class="selected">Когда</li>
+              <li>В этот месяц</li>
+              <li>На три месяц</li>
+              <li>На лето</li>
+              <li>На осень</li>
+              <li>Выбрать дату</li>
+            </ul>
+          </div></li>
+
+      </ul>
+    </div>
+      <div id="map"></div>
+      <div class="events events__local">
+
+
+      <div class="ican">
+          <div>
+            <h3>Я могу помочь как <input placeholder="Например, фотограф" type="text"></h3>
+            <ul class="ac-list">
+                <li>Плотник</li>
+                <li>Програмист</li>
+            </ul>
+
+            <ul class="example-list">
+              <li>фотограф</li>
+              <li>мастерица</li>
+              <li>aквагример</li>
+              <li>помощник</li>
+              <li>мантажнкик</li>
+              <li>повар</li>
+              <li>администратор</li>
+              <li>йог</li>
+              <li>вожатый</li>
+              <li>руководитель студии</li>
+              <li>медицинский работник</li>
+              <li>официант</li>
+              <li>DJ</li>
+            </ul>
+
+          </div>
+        </div>
+
+
+
+
+          <div class="events-wpapper">
+          <ul class="events-list">
+            <li id="event-1">
+              <div>
+                <a href="javascript:;" class="add"></a>
+                <span class="event__schedule"> 6-7 сентября 2015, 10:00 – 18:00</span>
+
+                <h3>Благотворительный день города <span class="mark">Благотворительная акция</span></h3>
+
+                <p>Москвичи 6-7 сентября отметят День города — местных жителей и гостей столицы ждут более тысячи мероприятий, которые пройдут в парках, кинотеатрах, музеях и на бульварах и улицах города.</p>
+                <div class="details">
+                  <div class="item">
+
+                      <b>Требуются:</b> <a href="#">фотограф</a>, <a href="#">мастерица</a>, <a href="#">aквагример</a>
+                  </div>
+                  <div class="item portner">
+
+                    <img src="http://s.mos.ru/common/upload/moscow_blazon_big.png">
+                    <img src="http://toplogos.ru/images/logo-gazprom-neft.png">
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li id="event-2">
+
+              <div>
+                <a href="javascript:;" class="add"></a>
+                <span class="event__schedule">5 сентября 2015, 12:00 – 24:00</span>
+                <h3>Фестиваль оркестров на ВДНХ  <span class="mark">Организация мероприятия</span></h3>
+
+                <p>
+                  Вы никогда не узнаете заранее, на какой аллее или площади ВДНХ зазвучат трубы и фанфары, вы не сможете предположить, ждет ли вас классика, джаз или поп-модерн, вы даже не сможете предугадать, будет ли оркестр маршировать, сидеть в тени деревьев или украсит своим присутствием сцену. Но вы можете быть уверены в одном — каждую пятницу вас ждет встреча с прекрасным духовым оркестром.
+                </p>
+                <div class="details">
+                  <div class="item">
+                    <b>Требуются:</b> <a href="#">фотограф</a>, <a href="#">мантажнкики</a>, <a href="#">помощники</a>
+                  </div>
+                  <div class="item portner">
+
+                    <img src="http://s.mos.ru/common/upload/moscow_blazon_big.png">
+                    <img src="http://www.logobank.ru/images/ph/ru/a/afisha.png">
+                    <img src="http://www.intermedia.ru/img/news/266037.png">
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li id="event-3">
+
+              <div>
+                <a href="javascript:;" class="add"></a>
+                <span class="event__schedule">10 сентября 2015,   16:00 – 19:00</span>
+
+                <h3>Раздача еды и тепла бездомным людям  <span class="mark">Благотворительная акция</span></h3>
+
+                <p>
+                  Каждые выходные мы встречаемся, чтобы приготовить горячую еду, чай и не забыть про одежду. Все это мы приносим на вокзалы и улицы города бездомным людям вместе с нашими улыбками, теплом, вниманием и дружеским участием.
+                </p>
+                <div class="details">
+                  <div class="item">
+                    <b>Требуются:</b> <a href="#">повар</a>, <a href="#">помощники</a>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li id="event-4">
+              <div>
+                <a href="javascript:;" class="add"></a>
+                <span class="event__schedule">15 сентября 2015, 09:00 – 22:00</span>
+                <h3>В парке Горького пройдёт экологическая очистка земли  <span class="mark">Социальная программа</span></h3>
+
+                <p>
+                  В день мероприятия в парке организуют площадку «Большое массовое поле», на которой воссоздадут пейзаж сельской местности: на газон положат стоги сена и установят деревянные указатели. К очистке парка будут привлекать волонтёров, в благодарность их обещают угостить чаем из самовара в шатре.
+                </p>
+                <div class="details">
+
+                  <div class="item">
+                    <b>Требуются:</b> <a href="#">администратор</a>, <a href="#">йог</a>, <a href="#">помощники</a>
+                  </div>
+                  <div class="item portner">
+                    <img src="http://s.mos.ru/common/upload/moscow_blazon_big.png">
+                    <img src="http://www.logobank.ru/images/ph/ru/a/afisha.png">
+                    <img src="http://sweetklukva.com/wp-content/uploads/2014/10/logo-the-village.jpg">
+                  </div>
+
+                </div>
+              </div>
+            </li>
+            <li id="event-5">
+
+              <div>
+                <a href="javascript:;" class="add"></a>
+                <span class="event__schedule">26 сентября 2015, 12:00 - 10 октября 2015, 20:00</span>
+                <h3>Шередарь <span class="mark">Помощь детям</span></h3>
+
+                <p>
+                  Мы приглашаем детей в возрасте 7-12 лет и подростков 13-17 лет, перенесших онкологические и гематологические заболевания, со сроком после окончания основного курса лечения до 5-ти лет, а также сиблингов (здоровых братьев и сестер детей, перенесших тяжелые заболевания).
+                </p>
+                <div class="details">
+                  <div class="item">
+                      <b>Требуются:</b> <a href="#">вожатые</a>, <a href="#">руководители студий</a>, <a href="#">фотограф</a>, <a href="#">медицинский работник</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="event-9">
+
+              <div>
+                <a href="javascript:;" class="add"></a>
+                <span class="event__schedule">8 августа 2015, 15:00 – 22:00</span>
+                <h3>Последний звонок в Школе дизайна Яндекса <span class="mark">Социальная программа</span></h3>
+
+                <p>
+                  Мы рады пригласить вас на специальное мероприятие в рамках Школы дизайна Яндекса – лекцию Ирен Перейра и Антона Реппонена «The Process of Creating Impactful Interactive Experiences».
+                </p>
+                <div class="details">
+                  <div class="item">
+                    <b>Требуются:</b> <a href="#">администраторы</a>, <a href="#">помощники</a>, <a href="#">официанты</a>, <a href="#">DJ</a>
+                  </div>
+                  <div class="item portner">
+
+                    <img src="http://mybandnews.com/wp-content/uploads/2012/07/Look-At-Me-Magazine.jpg">
+                    <img src="http://img.artlebedev.ru/everything/yandex/identity3/yandex3-anon.gif">
+                    <img src="http://www.interviewrussia.ru/sites/all/themes/interviewrussia2/images/logo.png">
+                  </div>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="events events__global events__global__second">
+
+
+      <div class="events-wpapper">
+        <ul class="events-list">
+          <li id="event-6">
+            <div>
+              <a href="javascript:;" class="add"></a>
+              <span class="event__schedule">02 сентября 2015, 10:00 – 18:00</span>
+
+              <h3>Conservation Volunteers</h3>
+               <span class="mark">Австралия</span> <span class="mark">Сидней</span> <span class="mark">Английский</span> <span class="mark">Организационные</span>
+                <div class="item">
+                  <p>
+                    Это краткосрочный проект существует в Австралии и нескольких других странах и предполагает работу в группах по защите природы и содействию эко-туризму. Присоединиться к проекту можно за небольшую плату (обычно около 100 долларов в неделю), которая покрывает расходы на питание и проживание. Британский аналог (British Trust for Conservation Volunteers) можно найти здесь
+                  </p>
+
+              </div>
+            </div>
+          </li>
+          <li id="event-7">
+            <div>
+              <a href="javascript:;" class="add"></a>
+              <span class="event__schedule">02 сентября 2015, 10:00 – 18:00</span>
+
+              <h3>Appalachian Trail Conference</h3>
+
+              <span class="mark">США</span> <span class="mark">Английский</span> <span class="mark">Организационные</span>
+
+
+
+                <div class="item">
+                  <p>
+                    Тропа среди гор Аппалачи на востоке США имеет протяженность более чем 3 200 километров и является местом обитания 2 000 видов животных, исчезающих и находящихся на грани полного исчезновения.
+Волонтеры помогают в строительстве тропы и сохранении природы в обмен на жилье и еду.
+                  </p>
+
+
+              </div>
+            </div>
+          </li>
+          <li class="" id="event-8">
+            <div>
+              <span class="bookmark bookmark_size_s bookmark_theme_white i-fav-manager__bookmark i-fav-manager__bookmark_name_event-5577109b7abde95fc2955c45" data-stat="{&quot;context&quot;:&quot;events.rubric_events&quot;,&quot;context_tag&quot;:&quot;kids&quot;,&quot;index&quot;:12,&quot;event_id&quot;:&quot;5577109b7abde95fc2955c45&quot;,&quot;event_tags&quot;:[&quot;art&quot;],&quot;event_has_argument&quot;:true,&quot;action&quot;:&quot;click.event.favourite&quot;}"></span>
+              <a href="javascript:;" class="add"></a>
+              <span class="event__schedule">02 сентября 2015, 10:00 – 18:00</span>
+
+              <h3>Kibbutz Volunteer</h3>
+              <span class="mark">Азия</span> <span class="mark">Израиль</span> <span class="mark">Киббутц</span> <span class="mark">Английский</span> <span class="mark">Иврит</span> <span class="mark">Русский</span> <span class="mark">Организационные</span>
+
+                <div class="item">
+                  <p>
+                    Киббутц (Кибуц) – район Израиля с превосходным сообществом, но сложной политикой, который редко проскальзывает в новостях.
+Волонтерство дает возможность узнать о регионе из первых рук, живя в сообществе с предоставлением питания и жилья. Это регион хорош для изучения Ближнего Востока и Северной Африки.
+                  </p>
+              </div>
+            </div>
+          </li>
+
+
+
+
+        </ul>
+        </div>
+      </div>
+
+
+
+      <div class="add-form">
+          <div class="wrapper">
+            <i class="popup__close"></i>
+              <h2>Создать событие</h2>
+
+              <div class="form-item">
+                <label>Ссылка на событие в Facebook.com</label>
+                <input placeholder="" type="text">
+              </div>
+
+              <div class="form-item">
+                <label>Название события</label>
+                <input placeholder="например, 'Праздник мёда' " type="text">
+              </div>
+
+              <div class="form-item">
+                <label>Выберите тип мероприятия</label>
+                <div class="select"></div>
+              </div>
+
+              <div class="form-item">
+                <label>Хештег</label>
+                  <input placeholder='например, #volonter_bez_granic' type="text">
+              </div>
+              <div class="form-item">
+                <label>Описание</label>
+                <textarea placeholder='400 символов'></textarea>
+              </div>
+              <div class="form-item">
+                <label>Кто требуется</label>
+                <textarea placeholder='Через запятую'></textarea>
+              </div>
+
+              <div class="form-item">
+                <input id="radio1" type="radio" name="face" checked> <label for="radio1">Физическое лицо</label>
+                <input id="radio2" type="radio" name="face"> <label for="radio2">Юридическое лицо</label>
+                <div class="req">
+                  <div class="form-item">
+                    <label>Название компании</label>
+                    <input placeholder='например, ООО "Дружба"' type="text">
+                  </div>
+                  <div class="form-item">
+                    <label>Номер расчетного счета</label>
+                    <input placeholder='20 цифр' type="text">
+                  </div>
+                  <div class="form-item">
+                    <label>ИНН</label>
+                    <input placeholder='10 цифр' type="text">
+                  </div>
+                  <div class="form-item">
+                    <label>БИК</label>
+                    <input placeholder='9 цифр' type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label>Email</label>
+                <input type="text">
+              </div>
+
+            <div class="form__item form__item_display_right">
+              <button class="button button_theme_action button_size_m button_pseudo_yes form__control form__control_name_create-form i-bem button_js_inited" role="button" type="submit">
+                <span class="button__text">Отправить на модерацию</span>
+              </button>
+              </div>
+              <div class="form__item form__item_display_right">
+                <button class="button button_theme_action button_theme_action_w button_size_m button_pseudo_yes form__control form__control_name_create-form i-bem button_js_inited" role="button" type="submit">
+                  <span class="button__text">Отмена</span>
+                </button>
+                </div>
+
+          </div>
+      </div>
+      <div class="sub">
+        Подписаться на обновления
+        <input placeholder="Email" type="text"><a href="#">Подписаться</a>
+      </div>
+      <div class="footer clearfix" role="contentinfo"><div class="footer__wrapper content__width"><div class="footer__column footer__column_side_right"><div class="copyright">©&nbsp;2015&nbsp;&nbsp;ООО «<a class="copyright__link" href="http://www.yandex.ru">Яндекс</a>»</div></div><div class="footer__column"><a class="link footer__link" href="http://help.yandex.ru/travel">Прошедшие программы</a><a class="link footer__link" href="http://help.yandex.ru/travel">Помощь</a><a class="link footer__link" href="http://feedback2.yandex.ru/travel">Обратная связь</a><a class="link footer__link" href="https://legal.yandex.ru/travel_termsofuse/">Пользовательское соглашение</a></div></div></div>
+
+
+
+
+      <div id="shein" class="shein">
+        <p>Наговнокодил</p>
+      </div>
+    </div>
+    <!--  <script src="js/angular.min.js" type="text/javascript"></script> -->
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      <script src="js/mapbasics.js" type="text/javascript"></script>
+      <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+      <script src="js/shein.js" type="text/javascript"></script>
+      <script src="js/script.js" type="text/javascript"></script>
+
+  </body>
+</html>

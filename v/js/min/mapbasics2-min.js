@@ -1,0 +1,1 @@
+ymaps.ready(function(){var o=ymaps.geolocation,e=new ymaps.Map("mapInner",{center:[55.7341,37.5877],zoom:15,controls:["zoomControl"]},{searchControlProvider:"yandex#search"});e.behaviors.disable("scrollZoom");var a=new ymaps.Placemark([55.7341,37.5877],{hintContent:"Последний звонок в Школе дизайна Яндекса"},{preset:"islands#redIcon"});e.geoObjects.add(a)});
