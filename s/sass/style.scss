@@ -1,0 +1,358 @@
+@import "compass/reset";
+
+$green-text: #32a999;
+
+body{
+  font: .8em Arial,Helvetica,sans-serif;
+  max-width: 1280px;
+}
+b{
+  font-weight: 600;
+}
+.main{
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-flow: row wrap;
+  footer{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgba(0,0,0,.3);
+  }
+}
+.search-line{
+  position: relative;
+  transition: all .3s;
+  z-index: 1;
+  .help{
+    display: none;
+    position: absolute;
+    right: 110px;
+    text-align: right;
+    padding: 7px 10px;
+    color: rgba(0, 0, 0, 0.3);
+    line-height: 17px;
+    a{
+      color: #32A999;
+      text-decoration: none;
+      &:hover{
+        border-bottom: 1px dashed;
+      }
+    }
+  }
+  &>input{
+    height: 50px;
+    width: 500px;
+    float: left;
+    padding: 0 108px 0 20px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+  }
+  .button{
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(to bottom, rgba(95,208,193,1) 0%,rgba(0,206,179,1) 100%);
+      border-radius: 3px;
+      padding: 10px 25px;
+      height: 26px;
+      top: 2px;
+      color: #fff;
+      line-height: 28px;
+      font-size: 16px;
+      position: absolute;
+      right: 2px;
+  }
+}
+
+.ui-autocomplete{
+  background-color: #fff;
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.15);
+  width: auto !important;
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 0px;
+  transform: translatey(15px);
+  z-index: 2;
+  li{
+    padding: 5px 20px;
+    &.ui-state-focus{
+    color: #00ceb3;
+    }
+  }
+}
+.ui-helper-hidden-accessible{
+  display: none;
+}
+.done{
+  .search-line{
+      box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  }
+}
+.output{
+  display: none;
+  width: 100%;
+  .organic{
+    width: 580px;
+    flex: 0 auto;
+    p + p{
+      margin-top: 5px;
+    }
+    li{
+      h2{
+        a{
+          text-decoration: none;
+          color: #2C46C7;
+          font-size: 20px;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .link{
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.5);
+        padding: 4px 3px 10px 0;
+        cursor: text;
+        i{
+          display: inline-block;
+          height: 10px;
+          width: 10px;
+          background: url(http://favicon.yandex.net/favicon/fresitapizza.ru/el-inka.ru/staryi-gorod.c…k.org/xn----7sbbagdm4c7azafgg7o.xn--p1ai/povar-cook.ru?color=255,255,255,0);
+          height: 16px;
+          width: 16px;
+          background-size: 100% auto;
+          margin-bottom: -4px;
+          margin-right: 3px;
+          position: relative;
+          top: -1px;
+        }
+        span{
+          opacity: 0;
+          transition: opacity .3s;
+          width: 0;
+          overflow: hidden;
+          display: inline-block;
+          position: absolute;
+
+        }
+        &:hover{
+          span{
+            opacity: 1;
+            display: inline;
+            position: static;
+            a{
+              text-decoration: none;
+              color: $green-text;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      p{
+        font-size: 13px;
+        line-height: 18px;
+      }
+      &+li{
+        margin-top: 50px;
+      }
+    }
+  }
+  .right-col{
+    flex: 1 auto;
+    padding: 0 0px 0 100px;
+    box-sizing: border-box;
+    img{
+      width: 300px;
+    }
+    p{
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    a{text-decoration: none;
+      color: #2C46C7;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+#ad2 i{
+  background-position: 0 -16px;
+}
+.list{
+  .search-line{
+    position: fixed;
+    top: 0;
+    &>input{
+      width: 820px;
+    }
+    .help{
+      display: block;
+    }
+  }
+  .main{
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 170px 90px 0;
+    footer{
+      position: static;
+      transform: translate(0);
+      text-align: center;
+      padding: 20px;
+      flex: 1 100%;
+      margin-top: 50px;
+    }
+  }
+  .output{
+    display: flex;
+    position: relative;
+  }
+}
+.nav{
+  position: absolute;
+  top: -80px;
+  li{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+    &:hover{
+      color: #00CEB3;
+    }
+    &.active{
+      padding: 9px 0px;
+      border-bottom: 2px solid #00CEB3;
+      &:hover{
+        cursor: default;
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+.show-tools{
+  #showTools{
+    border-bottom: 1px dashed;
+  }
+  .main{
+    padding-top: 225px;
+  }
+}
+.tools{
+  display: none;
+  background: #fff;
+  .show-tools &{
+    display: block;
+  }
+  clear: both;
+  padding: 10px 20px;
+  input{
+    background:rgba(0, 0, 0, .05);
+    border: 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    &+*{
+      margin-left: 5px;
+    }
+    &[type=checkbox]{
+      margin-right: 5px;
+    }
+  }
+}
+.menu{
+    padding: 10px 0 0;
+  a{
+    text-decoration: none;
+    color: $green-text;
+    &:hover{
+      text-decoration: underline;
+    }
+    & + a{
+      margin-left: 10px;
+    }
+  }
+}
+.ad{
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: 100;
+  padding: 2px 3px;
+  border-radius: 3px;
+  font-size: 10px;
+}
+.more{
+   a{
+      text-decoration: none;
+      color: $green-text;
+      display: block;
+      font-size: 14px;
+      &:hover{
+        text-decoration: underline;
+    }
+    & + a{
+      margin-top: 6px;
+    }
+  }
+  h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .search-line {
+    .button{ display: none}
+    input{
+      width: 250px;
+      padding: 0 20px;
+      font-size: 12px;
+    }
+  }
+  .done{
+    .search-line {
+      box-shadow: 0 0 60px #52C1B3;
+    }
+  }
+  .list{
+      .search-line{
+        width: 100%;
+        left: 0;
+        input{width: 100%;
+        box-sizing: border-box;}
+        .help{
+          display: none;
+        }
+      }
+      .main{
+        padding: 170px 20px 0;
+      }
+      .output{
+        display: block;
+        .organic{
+          width: auto;
+          li h2 a{
+            font-size: 16px;
+            line-height: 20px;
+          }
+          li + li{
+                margin-top: 35px;
+          }
+        }
+        .right-col{
+          padding: 50px 0px 0 0;
+          img{
+            width: 275px;
+          }
+        }
+      }
+
+  }
+}
