@@ -1,6 +1,6 @@
 body{
   padding: 40px;
-  background: #000 url(../img/main_bg.jpg) 75% -50px;
+  background: #000 url(../img/main_bg.jpg) 75% -50px no-repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
   box-sizing: border-box;
   position: relative;
@@ -38,7 +38,7 @@ li{
   margin-bottom: 15px;
 }
 a{
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 100;
   text-decoration: none;
   font-size: 80px;
