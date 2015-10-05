@@ -1,14 +1,27 @@
 body{
   padding: 40px;
-  background: #000;
+  background: #000 url(../img/4.jpg) 75% -50px;
   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
   box-sizing: border-box;
-
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  &:before{
+    content: '';
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    top:0;
+    left: 0;
+  }
 }
 
 .logo{
   width: 306px;
   height: 55px;
+  position: relative;
 }
 
 ul{
@@ -18,14 +31,14 @@ ul{
   transform-origin: 0 0;
   width: 100%;
   box-sizing: border-box;
-
+  position: relative;
 }
 
 li{
   margin-bottom: 15px;
 }
 a{
-  color: grey;
+  color: #aaa;
   font-weight: 100;
   text-decoration: none;
   font-size: 80px;
