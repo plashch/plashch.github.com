@@ -1,34 +1,21 @@
 body {
-  padding: 40px;
+  padding: 40px 40px 80px;
   background: #000 url(../img/main_bg.jpg) 75% -50px no-repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
   box-sizing: border-box;
   position: relative;
   background-size: cover;
   background-attachment: fixed; }
-  body:before {
-    content: '';
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    top: 0;
-    left: 0; }
 
 .logo {
-  width: 306px;
-  height: 55px;
-  position: relative; }
+  width: 50px; }
 
 ul {
   list-style: none;
   margin-top: 40px;
   padding: 0 40px 0 0;
-  transform-origin: 0 0;
   width: 100%;
-  box-sizing: border-box;
-  position: relative; }
+  box-sizing: border-box; }
 
 li {
   margin-bottom: 15px; }
@@ -37,6 +24,15 @@ a {
   color: rgba(255, 255, 255, 0.75);
   font-weight: 100;
   text-decoration: none;
-  font-size: 80px; }
+  font-size: 50px; }
   a:hover {
     border-bottom: 1px solid; }
+
+.about {
+  font-size: 50px;
+  color: #eee;
+  font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  line-height: 1.2; }
+
+#outer {
+  transform-origin: 0 0; }
