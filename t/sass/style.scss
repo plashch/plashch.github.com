@@ -1,0 +1,87 @@
+@import "compass/reset";
+
+
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-size: 150px;
+	div{
+		width: 0;
+		transform: translate(-75px, -30%);
+		opacity: 0;
+		color: #287AA0;
+		&:nth-child(1){
+			animation: tree1 3s ease infinite;
+		}
+		&:nth-child(2){
+			animation: tree2 3s ease infinite;
+		}
+		&:nth-child(3){
+			animation: tree3 3s ease infinite;
+		}
+	}
+}
+
+@keyframes tree1 {
+		0% {opacity: 0}
+		20% {opacity: 1}
+
+		80% {opacity: 1}
+    100%   {opacity: 0}
+}
+@keyframes tree2 {
+	0% {opacity: 0}
+	20% {opacity: 0}
+	60% {opacity: 1}
+
+	80% {opacity: 1}
+	100%   {opacity: 0}
+}
+@keyframes tree3 {
+	0% {opacity: 0}
+	40% {opacity: 0}
+
+	80% {opacity: 1}
+	100%   {opacity: 0}
+}
+
+
+
+
+@font-face {
+	font-family: 'tree-loading';
+	src:url('../fonts/tree-loading.eot?oloc5j');
+	src:url('../fonts/tree-loading.eot?oloc5j#iefix') format('embedded-opentype'),
+		url('../fonts/tree-loading.ttf?oloc5j') format('truetype'),
+		url('../fonts/tree-loading.woff?oloc5j') format('woff'),
+		url('../fonts/tree-loading.svg?oloc5j#tree-loading') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'tree-loading';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tree:before {
+	content: "\e900";
+}
+.icon-tree2:before {
+	content: "\e901";
+}
+.icon-tree1:before {
+	content: "\e902";
+}
