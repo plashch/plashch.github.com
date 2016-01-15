@@ -1,0 +1,26 @@
+@import "compass/reset";
+
+body{
+  background: #ECEFEE;
+}
+
+.housing{
+  width: 40vw;
+  height: 40vw;
+  background: linear-gradient(135deg, rgba(253,253,253,1) 0%,rgba(195,195,195,1) 100%);
+  border-radius: 50%;
+  box-shadow: 20px 20px 80px 20px #838381;
+  padding: 1.5%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .face{
+    border-radius: 50%;
+    background: #5D5D5D;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.5), inset -1px -1px 0 #e8e8e8, 10px 10px 0 rgba(170, 170, 170, 0.1);
+  }
+}

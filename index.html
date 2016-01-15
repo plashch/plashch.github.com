@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
-  <body class="main">
+  <body id="main" class="main" style="background-image: url(img/face_1.jpg)">
     <div>
-    <img class="logo" src="img/logo.png">
+    <i title="plashchynski.ru" id="logo" class="logo"></i>
     <p class="about">
-      Меня зовут Сергей Плащинский.<br>Я занимаюсь продуктовым дизайном, проектированием интерфейсов и версткой.
+      Меня зовут Сергей Плащинский.<br>Я занимаюсь дизайном, проектированием и версткой интерфейсов.
     </p>
     <p class="about">
-      Начинал как фронтенд–разработчик, но увлекся проектированием и перерос в дизайнера. Теперь проектирую интерфейсы, в чем мне помогают знания веб-технологий.
+      Начинал как фронтенд–разработчик, но увлекся проектированием и перерос <br> в дизайнера.
+    </p>
+    <p class="about">
+      <strike>Минск.</strike> Москва.
     </p>
 
     <ul  id="outer">
-      <li><a title="Cтраница на Facebook" target=_blank href="https://www.facebook.com/siarhei.plashchynski">facebook.com/siarhei.plashchynski</a></li>
-      <li><a title="Блог" target=_blank href="http://s_plashchynski.livejournal.com/">s_plashchynski.livejournal.com</a></li>
+      <li><a title="Facebook" target=_blank href="https://www.facebook.com/siarhei.plashchynski">facebook.com/siarhei.plashchynski</a></li>
+      <li><a title="Medium" target=_blank href="https://medium.com/@s_plashchynski">medium.com/@s_plashchynski</a></li>
       <li><a title="Instagram" target=_blank href="https://instagram.com/s_plashchynski/">instagram.com/s_plashchynski</a></li>
       <li><a title="Twitter" target=_blank href="https://twitter.com/s_plashchynski">twitter.com/s_plashchynski</a></li>
-      <li><a title="Почта" target=_blank href="mailto:siarheiplashchynski@gmail.com">siarheiplashchynski@gmail.com</a></li>
+      <li><a title="Mail" target=_blank href="mailto:siarheiplashchynski@gmail.com">siarheiplashchynski@gmail.com</a></li>
     </ul>
+<!--
     <div class="row">
       <a target=_blank title="EatPrayLoveyoga - пространство вдохновения тех, кто стремится к здоровому образу жизни." href="http://eatprayloveyoga.ru/" class="item eply">
 
@@ -34,7 +38,7 @@
 
       <a title="Школа дизайна Яндекса" href="yads.html" class="item ya"></a>
     </div>
-
+-->
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -74,5 +78,20 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/32975779" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <span class="l-img"></span>
+    <script>
+
+      var logo = document.getElementById('logo');
+      var main = document.getElementById('main');
+
+      logo.onmouseover = function(){
+        main.style.backgroundImage = "url('img/face_2.jpg')";
+    }
+    logo.onmouseout = function(){
+      main.style.backgroundImage = "url('img/face_1.jpg')";
+  }
+
+
+    </script>
 </body>
 </html>
